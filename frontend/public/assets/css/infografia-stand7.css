@@ -1,0 +1,9 @@
+
+
+@media (max-width: 768px) {
+
+    div.info-image-container img.info-image {
+        width: 60% !important;
+    }
+
+  }

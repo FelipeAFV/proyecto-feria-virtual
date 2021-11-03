@@ -1,0 +1,15 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lienzo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.invalid-field {
+    font-size: 0.7em;
+}

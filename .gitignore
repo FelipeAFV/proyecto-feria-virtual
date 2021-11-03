@@ -1,0 +1,5 @@
+node_modules/
+ormconfig.json 
+dist/
+.DS_Store
+src/pdf/CUENTODIDAXIAfinal.pdf

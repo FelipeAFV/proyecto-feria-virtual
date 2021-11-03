@@ -1,0 +1,75 @@
+.park-background {
+    background-image: url('../images/recursos-didaxia/vista-parque.png');
+    /* background-attachment: scroll; */
+    background-size: cover;
+      /* Set rules to fill background */
+  min-height: 100%;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: 100%;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+.scrollable-content {
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    display: flex;
+}
+
+/* #bienestar:hover {
+    cursor: pointer;
+} */
+
+
+.park-main {
+    display: flex;
+}
+.park-stand-container {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.first-stand-container {
+    /* position: relative;
+    top: 200px; */
+    margin-top: 100px;
+}
+
+.second-stand-container, .third-stand-container {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.stand {
+    /* min-width: 250px;
+    max-width: 250px;
+    min-height: 250px; */
+    max-width: 250px;
+    min-width: 0;
+
+    margin: 10px 20px;
+    cursor: pointer;
+}
+
+.stand img {
+    max-width: 250px;
+}
+
+.bienestar {
+    background: url('../images/recursos-didaxia/stands/bienestar-con-luz.png');
+}

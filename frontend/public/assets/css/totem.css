@@ -1,0 +1,19 @@
+.totem-background {
+        background-image: url('../images/totem/totem-background.png');
+        /* background-attachment: scroll; */
+        background-size: cover;
+          /* Set rules to fill background */
+      min-height: 100%;
+        
+      /* Set up proportionate scaling */
+      width: 100%;
+      height: 100%;
+        
+      /* Set up positioning */
+      position: fixed;
+      top: 0;
+      left: 0;
+    
+    
+    
+}

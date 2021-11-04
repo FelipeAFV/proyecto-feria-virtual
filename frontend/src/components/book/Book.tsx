@@ -4,27 +4,27 @@ import { loadPdf } from '../../api-client/pdf-loader';
 import { arrowStyle, pdfContainerStyle } from './book-style';
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { IconContext } from 'react-icons/lib';
-import pdf from "./CUENTODIDAXIAfinal.pdf";
+
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 
 export default function Book() {
 
-//     const [ pdfFile, setPdfFile] = useState();
+    const [ pdfFile, setPdfFile] = useState();
     const [numPages, setNumPages] = useState();
     const [currentPage, setCurrentPage] = useState(1);
 
-//     useEffect(() => {
-//         loadPdfBook();
+    // useEffect(() => {
+    //     loadPdfBook();
 
-//     }, []);
+    // }, []);
 
-//     const loadPdfBook = async () => {
+    // const loadPdfBook = async () => {
 
-//         const book = await loadPdf();
-//         console.log('Haciendo request de libro', book);
-//         setPdfFile(book.data);
-//     }
+    //     const book = await loadPdf();
+    //     console.log('Haciendo request de libro', book);
+    //     setPdfFile(book.data);
+    // }
 
     const onLoadSuccess = (pdf: any) => {
         setNumPages(pdf.numPages);
@@ -47,13 +47,13 @@ export default function Book() {
         setCurrentPage(currentPage-1);
     }
 
-    console.log(pdf);
+
     return (
         <>
             <div style={pdfContainerStyle}>
             <IconContext.Provider value={{size: '20px'}}>
                 <FaArrowLeft style={arrowStyle} onClick={prevPage}/>
-                <Document onLoadSuccess={onLoadSuccess} onLoadError={console.error} file={'/api/pdf'}>
+                <Document onLoadSuccess={onLoadSuccess} onLoadError={console.error} file={'/assets/media/pdf/CUENTODIDAXIAfinal.pdf'}>
                     <Page height={500} pageNumber={currentPage} />        
                 </Document>   
                 <FaArrowRight style={arrowStyle} onClick={nextPage}/>

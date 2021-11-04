@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const loadPdf = () => {
-    return axios.get('/api/pdf');
+    return axios.get('/assets/media/pdf/CUENTODIDAXIAfinal.pdf');
 }
 
 export {

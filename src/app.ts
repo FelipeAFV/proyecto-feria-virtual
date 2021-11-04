@@ -8,6 +8,7 @@ import passport from "passport";
 import configure from "./config/passport";
 import authRoutes from "./routes/auth.router";
 import imagesRouter from "./routes/images.router";
+import mediaRouter from "./routes/media.router";
 import challengeRoutes from "./routes/challenge.router";
 import cors from "cors";
 import path from "path";
@@ -79,6 +80,7 @@ app.use(express.urlencoded());
 app.use(passport.initialize());
 
 app.use('/assets/images', imagesRouter);
+app.use('/assets/media', mediaRouter);
 
 app.use(express.static(path.join(process.cwd(), 'frontend/build')));
 
@@ -103,15 +105,15 @@ app.use('/api', passport.authenticate('jwt', {session: false}), (req: Request, r
 
 app.use('/api/challenge', challengeRoutes);
 
-app.use('/api/pdf', async (req: Request, res: Response) => {
-    try {
-        const pdf = await fs.readFileSync(path.join(process.cwd(),'/src/pdf/CUENTODIDAXIAfinal.pdf'));
-        res.send(pdf);
+// app.use('/api/pdf', async (req: Request, res: Response) => {
+//     try {
+//         const pdf = await fs.readFileSync(path.join(process.cwd(),'/src/pdf/CUENTODIDAXIAfinal.pdf'));
+//         res.send(pdf);
         
-    } catch (err) {
-        console.log('Error al leer pdf', err)
-    }
-});
+//     } catch (err) {
+//         console.log('Error al leer pdf', err)
+//     }
+// });
 
 // app.get('/assets/images/:fileKey', (req: Request, res: Response) => {
 //     const fileKey = req.params.fileKey;

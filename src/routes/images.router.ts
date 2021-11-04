@@ -24,5 +24,24 @@ router.get('/capsulas/:standNumber/:file', (req: Request, res: Response) => {
     }
 });
 
+router.get('/infografias/:file', (req: Request, res: Response) => {
+    let fileName = req.originalUrl;
+    fileName = fileName.replace('/','');
+
+    console.log('Solicitando infografia', req.url, req.originalUrl);
+    try {
+        const readStream =  getFileStream(fileName);
+
+        readStream?.on('error', () => {
+            res.json({error: 'No se pudo recolectar archivo desde amazon'});
+            res.end();
+        })
+        return readStream ? readStream.pipe(res) : res.json({error: 'No se pudo recolectar archivo desde amazon'});;
+
+    } catch (err) {
+        console.log(err);
+        return res.json({error: 'No se pudo recolectar archivo desde amazon'});
+    }
+});
 
 export default router;

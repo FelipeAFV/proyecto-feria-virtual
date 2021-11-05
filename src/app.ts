@@ -20,15 +20,15 @@ import { ChallengeComplete } from "./model/entity/ChallengeComplete";
 import { createChallenges, createStands } from "./config/create-database";
 import { getFileStream, uploadChallengeToS3 } from "./services/s3";
 
-
+// mysql://bca2f21cf6f36a:dd4eddfe@us-cdbr-east-04.cleardb.com/heroku_13850906d1c05ef?reconnect=true
 if (process.env.NODE_ENV == 'production') {
 
     console.log('Creando conexion en produccion');
     createConnection({
-        username: 'ba2d9d1950deb6',
-        password: '8ee77755',
+        username: 'bca2f21cf6f36a',
+        password: 'dd4eddfe',
         host: 'us-cdbr-east-04.cleardb.com',
-        database: 'heroku_41c4532eb4c2b01',
+        database: 'heroku_13850906d1c05ef',
         type: "mysql",
         port: 3306,
         synchronize: true,

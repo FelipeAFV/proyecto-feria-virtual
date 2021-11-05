@@ -54,7 +54,7 @@ export default function Book() {
             <IconContext.Provider value={{size: '20px'}}>
                 <FaArrowLeft style={arrowStyle} onClick={prevPage}/>
                 <Document onLoadSuccess={onLoadSuccess} onLoadError={console.error} file={'/assets/media/pdf/CUENTODIDAXIAfinal.pdf'}>
-                    <Page height={500} pageNumber={currentPage} />        
+                    <Page height={400} pageNumber={currentPage} />        
                 </Document>   
                 <FaArrowRight style={arrowStyle} onClick={nextPage}/>
             </IconContext.Provider>

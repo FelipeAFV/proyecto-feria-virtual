@@ -8,12 +8,20 @@ const totemStyle: CSSProperties = {
     backgroundRepeat: 'no-repeat',
     height: '600px',
     minWidth: '100%',
-    position: 'relative'
+    position: 'relative',
+    display: 'flex',
+    alignItems: 'center'
 }
 
 const linkStyle: CSSProperties = {
 
     textDecoration: 'none'
+}
+
+const videoContainer: CSSProperties = {
+    position: 'relative',
+    left: '10px',
+    bottom: '40px'
 }
 
 const continueButton: CSSProperties = {

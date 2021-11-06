@@ -187,7 +187,7 @@ export default function Stand() {
 
             <div className={'responsive-activities'}>
 
-                          { standNumber == 6 ? <h2 style={styles.headingStyle}>Programas</h2> : <h2 style={styles.headingStyle}>Actividades</h2>}
+                          { standNumber == 6 || 4 ? <h2 style={styles.headingStyle}>Programas</h2> : <h2 style={styles.headingStyle}>Actividades</h2>}
             {    currentActivity?.activities.map( (activity) => {
                                     return (
                                         <div className="video">
@@ -199,7 +199,7 @@ export default function Stand() {
                            }
             </div>
             <div className={'responsive-capsules'}>
-                          { standNumber == 6 ? '' : <h2  style={styles.headingStyle}>Capsulas Formativas</h2>}
+                          { standNumber == 6 || 4 ? '' : <h2  style={styles.headingStyle}>Capsulas Formativas</h2>}
                            {    currentCapsule?.cf.map( (capsula) => {
                                     return (
                                         <div className="video">

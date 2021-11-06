@@ -81,6 +81,7 @@ export const onRegister = async (data: any) => {
     try {
         const response = await axios.request(requestConfig);
         console.log(response);
+        return response;
     } catch (e: any) {
         console.log(e.response);
         return e;

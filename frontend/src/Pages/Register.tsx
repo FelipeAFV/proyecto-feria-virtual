@@ -3,6 +3,7 @@ import { Link, useHistory } from 'react-router-dom';
 import GRADES from "../model/grades/grades";
 import SUBJECTS, { SubjectValue } from "../model/subjects/subjects";
 import { onRegister } from "../components/Auth.api";
+import swal from 'sweetalert';
 
 
 interface RegisterValues {
@@ -140,14 +141,22 @@ export default function Register() {
         }
     }
 
-    const handleSubmit = (event: any) => {
+    const handleSubmit = async (event: any) => {
         event.preventDefault();
         console.log(registerValues);
         console.log(formFieldsStatus);
         console.log(isFormValid(formFieldsStatus));
         if (isFormValid(formFieldsStatus)) {
-             onRegister(registerValues);
-             history.push('/totem');
+            await onRegister(registerValues);
+            console.log('Redirigiendo a totem');
+            history.push('/totem');
+
+
+            swal({
+                title:"Registro exitoso",
+                icon: "success",
+                timer: 2000
+            });
         } else {
             alert('Rellena todos los campos el formulario');
         }

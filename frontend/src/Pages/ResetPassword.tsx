@@ -81,7 +81,6 @@ export default function ResetPassword() {
                                                                     newPassword: e.target.value
                                                                 })} />
                                                         </label>
-
                                                     </div>
                                                 </div>
                                                 <div className="fix">

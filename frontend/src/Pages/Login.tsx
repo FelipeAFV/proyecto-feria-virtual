@@ -44,33 +44,6 @@ export default function Login() {
         setShow(!showPost)
     }
 
-
-    /*
-    const dispátch = useDispatch();
-    function onLogin(e) {
-        e.preventDefault();
-        let error= false;
-        const errorObj = {...errorObj};
-        if (usename === '') {
-            errorObj.username = 'Usuario requerido';
-            error = true;
-        }
-        
-    
-        if(password === ''){
-            errorObj.password = 'Contraseña requerida';
-            error = true;
-        }
-
-        setErrors(errorObj);
-        if(error) return;
-        dispatch(loadingToggleAction(true));
-        dispatch(loginAcion(username,password, props.history));
-    }
-    
-    */
-
-
     return (
         <div>
             <section>

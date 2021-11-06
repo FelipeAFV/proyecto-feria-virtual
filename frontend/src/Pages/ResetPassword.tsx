@@ -21,24 +21,23 @@ export default function ResetPassword() {
     const handleSubmit = (event: any) => {
         event.preventDefault();
         try {
-            const response =  onPasswordChange({
+            const response = onPasswordChange({
                 password,
                 newPassword,
                 token
 
             });
             swal({
-                title:"Contraseña cambiada",
+                title: "Contraseña cambiada",
                 icon: "success",
-                timer: 2000
+                timer: 3000
             });
             history.push('/auth/login');
-            
+
         } catch (error: any) {
             console.log(error);
             setError(error);
         }
-
     }
     return (
         <div>
@@ -50,10 +49,9 @@ export default function ResetPassword() {
                                 <div className="container-full">
                                     <img src="./assets/images/recursos-didaxia/Lienzo bandera.png" alt="Didaxia Logo" className="didaxia-lienzo" />
                                     <div className="container-formb">
-                                        <h1 className="logo-d">DIDAXIA LOGO</h1>
+                                        <img src="./assets/images/recursos-didaxia/didaxia-logo.png" alt="Didaxia Logos" className="didaxia-logo" />
                                         <div className="primero segundo tercero cuarto quinto">
                                             <h2 className="logo-d septimo">Cambiar contraseña</h2>
-
                                         </div>
                                         <form className="form" id="loginForm" method="POST">
                                             <div className="primero segundo tercero cuarto quinto">
@@ -93,12 +91,14 @@ export default function ResetPassword() {
                                                     </div>
                                                 </div>
                                                 <div className="primero segundo tercero cuarto septimo octavo noveno decimo">
-                                                    <button className="btn btn-init btn-sub" type="submit"onClick={handleSubmit}>
+                                                    
+                                                    <button className="btn btn-init btn-sub" type="submit" onClick={handleSubmit}>
                                                         <div className="primero segundo tercero cuarto">Confirmar</div>
                                                     </button>
                                                     {error.length > 0 && <p>{error}</p>}
 
                                                 </div>
+
                                                 <div></div>
                                             </div>
 

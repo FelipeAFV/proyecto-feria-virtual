@@ -10,7 +10,8 @@ const totemStyle: CSSProperties = {
     minWidth: '100%',
     position: 'relative',
     display: 'flex',
-    alignItems: 'center'
+    alignItems: 'center',
+    justifyContent: 'center'
 }
 
 const linkStyle: CSSProperties = {
@@ -19,9 +20,10 @@ const linkStyle: CSSProperties = {
 }
 
 const videoContainer: CSSProperties = {
-    position: 'relative',
-    left: '10px',
-    bottom: '40px'
+  position: 'relative',
+  bottom: '40px',
+  left: '10px',
+  width: '400px'
 }
 
 const continueButton: CSSProperties = {
@@ -44,5 +46,6 @@ const continueButton: CSSProperties = {
 export {
     totemStyle,
     continueButton,
-    linkStyle
+    linkStyle, 
+    videoContainer
 };

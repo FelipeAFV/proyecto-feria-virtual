@@ -45,7 +45,7 @@ class ChallengeController {
         console.log('Ejecutando is challenge complete');
 
         if (!standId|| !req.user) {
-            return res.status(400).json({ message: 'No se enviaron los datosnecesarios para procesar la consulta'});
+            return res.status(400).json({ message: 'No se enviaron los datos necesarios para procesar la consulta'});
         }
 
         try {

@@ -46,33 +46,34 @@ export default function ParkView() {
         <Switch>
             <Route  exact path={`${path}`}>
 
-                <div className="park-background scrollable-content">
+                <div className="park-background park-main scrollable-content">
 
                         <div className="park-stand-container first-stand-container">
 
-                            <div className="stand">
+
                                 <Link to={`${path}/0`}>
 
                                     <img id={imagesUrl[0].name} onMouseLeave={mouseLeave} onMouseOver={hoverImage} src={`assets/images/recursos-didaxia/stands/${imagesUrl[0].url}`} alt="" />
                                 </Link>
                                 
-                            </div>
+
         
                         </div>
-                        <div className=" second-stand-container">
+                        <div className="park-stand-container second-stand-container">
 
                             {
                                 (
                                     () => {
                                         const stands = [];
                                         
-                                        for (let i = 1; i < 4; i++) {
+                                        for (let i = 1; i < 3; i++) {
                                             stands.push(
-                                                <div key={i} className="stand">
+
                                                     <Link to={`${path}/${i}`}>
                                                         <img id={imagesUrl[i].name} onMouseLeave={mouseLeave} onMouseOver={hoverImage}  src={`assets/images/recursos-didaxia/stands/${imagesUrl[i].url}`} alt="" />
                                                     </Link>
-                                                </div>
+
+
                                             );
                                         }
                                         
@@ -83,20 +84,21 @@ export default function ParkView() {
 
                             
                     </div>
-                        <div className=" third-stand-container">
+                        <div className="park-stand-container third-stand-container">
 
                             {
                                 (
                                     () => {
                                         const stands = [];
                                         
-                                        for (let i = 4; i < imagesUrl.length; i++) {
+                                        for (let i = 3; i < imagesUrl.length; i++) {
                                             stands.push(
-                                                <div key={i} className="stand">
-                                                    <Link to={`${path}/${i}`}>
-                                                        <img id={imagesUrl[i].name} onMouseLeave={mouseLeave} onMouseOver={hoverImage}  src={`assets/images/recursos-didaxia/stands/${imagesUrl[i].url}`} alt="" />
+
+                                                    <Link className={'stand-'+i} to={`${path}/${i}`}>
+                                                        <img  id={imagesUrl[i].name} onMouseLeave={mouseLeave} onMouseOver={hoverImage}  src={`assets/images/recursos-didaxia/stands/${imagesUrl[i].url}`} alt="" />
                                                     </Link>
-                                                </div>
+
+
                                             );
                                         }
                                         
@@ -107,7 +109,31 @@ export default function ParkView() {
 
                             
                     </div>
-                
+                        {/* <div className="park-stand-container fourth-stand-container">
+
+                            {
+                                (
+                                    () => {
+                                        const stands = [];
+                                        
+                                        for (let i = 6; i < imagesUrl.length; i++) {
+                                            stands.push(
+
+                                                    <Link to={`${path}/${i}`}>
+                                                        <img id={imagesUrl[i].name} onMouseLeave={mouseLeave} onMouseOver={hoverImage}  src={`assets/images/recursos-didaxia/stands/${imagesUrl[i].url}`} alt="" />
+                                                    </Link>
+
+                                            );
+                                        }
+                                        
+                                        return stands;
+                                    }
+                                    )()
+                                }
+
+                            
+                    </div>
+                 */}
                     
                 </div>
             </Route>

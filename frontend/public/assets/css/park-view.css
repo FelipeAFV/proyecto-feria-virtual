@@ -30,46 +30,104 @@
 
 
 .park-main {
-    display: flex;
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20%;
+    /* grid-template-rows: 80px 80px 80px 80px; */
+
+
 }
+
+.park-stand-container a {
+    text-align: center;
+}
+
+
+
 .park-stand-container {
+    margin-top: 100px;
     display: flex;
     /* align-items: center; */
     justify-content: space-around;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-basis: 25%;
+    flex-grow: 1; */
+    min-width: 0;
+    min-height: 0;
+    /* flex-wrap: wrap; */
+
 }
 
-.first-stand-container {
-    /* position: relative;
-    top: 200px; */
-    margin-top: 100px;
-}
-
-.second-stand-container, .third-stand-container {
-    margin-top: 80px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.second-stand-container {
+    display: grid;
+    grid-template-columns: 40% 40%;
     justify-content: space-around;
 }
 
+.third-stand-container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+
+}
+.third-stand-container img {
+    
+}
+
+.stand-6 {
+    grid-column: 2 / span 1;
+}
+
+
 
 .stand {
-    /* min-width: 250px;
-    max-width: 250px;
-    min-height: 250px; */
-    max-width: 250px;
+    
+    
     min-width: 0;
-
-    margin: 10px 20px;
+    min-height: 0;
+    
+    
+    
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    
+    
     cursor: pointer;
 }
 
-.stand img {
-    max-width: 250px;
+.park-stand-container img {
+    
+    
+    min-width: 100px;
+    min-height: 0;
+    max-width: 200px;
+    width: 100%;
+    max-height: 150px;
+    height: auto;
+    
+    
 }
 
 .bienestar {
     background: url('../images/recursos-didaxia/stands/bienestar-con-luz.png');
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .third-stand-container {
+        flex-wrap: nowrap;
+        grid-template-columns: 40% 40% ;
+        justify-content: space-around;
+        
+    }
+
+    .first-stand-container {
+        display: grid;
+        grid-template-columns: 40%;
+    }
+    
+    .stand-5 {
+      
+    }
+
+  }

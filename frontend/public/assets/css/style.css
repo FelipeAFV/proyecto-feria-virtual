@@ -51,8 +51,30 @@ body {
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     max-width: auto;
+    margin:auto;
+    margin-lef:20px
+
 }
 
+.container-logo{
+    
+    height: 158px;
+    overflow: hidden;
+    
+    position: relative;
+    
+    
+}
+.container-logo > .crop {
+    position:absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
 
 .user-input{
     color: rgba(var(--f52,142,142,142),1);
@@ -321,8 +343,12 @@ input{
     width: 100%;
     background-color: rgba(249, 254, 255, 0.726);
     border-radius: 30px;
+
     padding-bottom: 35px;
-    padding-top:55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 
 }
 .container-formb{
@@ -517,9 +543,9 @@ button{
 @media (max-width:768px){
     /*Se ejecutaran estos estilos*/
     .container-form{
-        max-width: 300px;
+        max-width: 350px;
         margin-bottom: 0;
-        width: 100%;
+        width: auto;
 
     }
     .didaxia-lienzo{
@@ -551,27 +577,7 @@ button{
         min-height:100vh;
     }
 }
-@media (max-width:1480px){
-    /*Se ejecutaran estos estilos*/
-    .container-form{
-        max-width: auto;
-        width: auto;
-        
-    }
-    .didaxia-lienzo{
-        max-width: 100%;
-        padding-top: 0px;
-        padding-bottom: 200px
-    }
-    .container-full{
-        min-height:100vh;
-        padding-top: 100px;
-        
-    }
-    .footer{
-        min-height:100vh;
-    }
-}
+
 
 @media (max-width:1024px){
     /*Se ejecutaran estos estilos*/
@@ -582,12 +588,12 @@ button{
     }
     .didaxia-lienzo{
         max-width: 100%;
-        padding-top: 0px;
-        padding-bottom: 300px
+        padding-top: 100px;
+        padding-bottom: auto;
     }
     .container-full{
         min-height:100vh;
-        padding-top: 100px;
+        padding-top: 0px;
         
     }
     .footer{
@@ -597,7 +603,18 @@ button{
 @media (max-width:375px){
     /*Se ejecutaran estos estilos*/
     .container-form{
-        max-width: 290px;
+        max-width: auto;
+        margin-bottom: 0;
+        width: 90%;
+    }
+    .didaxia-lienzo{
+        max-width: 100%;
+    }
+}
+@media (max-width:570px){
+    /*Se ejecutaran estos estilos*/
+    .container-form{
+        max-width: auto;
         margin-bottom: 0;
         width: 90%;
     }

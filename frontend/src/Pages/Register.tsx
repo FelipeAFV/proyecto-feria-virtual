@@ -44,11 +44,11 @@ const initialValues: RegisterValues = {
 
 
 
-const professorFields = ['firstName', 'lastName','age','phone','email','address','condominium','username','password',
+const professorFields = ['firstName', 'lastName', 'age', 'phone', 'email', 'address', 'condominium', 'username', 'password',
     'role', 'professorSchool', 'professorSubject'];
-const studentFields = ['firstName', 'lastName','age','phone','email','address','condominium','username','password',
+const studentFields = ['firstName', 'lastName', 'age', 'phone', 'email', 'address', 'condominium', 'username', 'password',
     'role', 'grade', 'school'];
-const representativeFields = ['firstName', 'lastName','age','phone','email','address','condominium','username','password',
+const representativeFields = ['firstName', 'lastName', 'age', 'phone', 'email', 'address', 'condominium', 'username', 'password',
     'role', 'childrenNumber'];
 
 
@@ -57,7 +57,7 @@ export default function Register() {
 
 
     const history = useHistory();
-    
+
     let initStatus = {
         firstName: false,
         lastName: false,
@@ -86,33 +86,33 @@ export default function Register() {
 
 
         if (registerValues.role == 'PROFESOR') {
-            for ( let field of professorFields) {
+            for (let field of professorFields) {
                 if (formStatus[field] == false) {
                     return false;
                 }
             }
-        
+
             return true;
-            
+
         } else if (registerValues.role == 'ALUMNO') {
 
-            for ( let field of studentFields) {
+            for (let field of studentFields) {
                 if (formStatus[field] == false) {
                     return false;
                 }
             }
-        
+
             return true;
-            
+
         } else if (registerValues.role == 'APODERADO') {
-            for ( let field of representativeFields) {
+            for (let field of representativeFields) {
                 if (formStatus[field] == false) {
                     return false;
                 }
             }
-        
+
             return true;
-            
+
         }
 
     }
@@ -146,8 +146,8 @@ export default function Register() {
         console.log(formFieldsStatus);
         console.log(isFormValid(formFieldsStatus));
         if (isFormValid(formFieldsStatus)) {
-             onRegister(registerValues);
-             history.push('/totem');
+            onRegister(registerValues);
+            history.push('/totem');
         } else {
             alert('Rellena todos los campos el formulario');
         }
@@ -169,7 +169,9 @@ export default function Register() {
 
 
             <div className="container-form">
-                <img src="./assets/images/recursos-didaxia/didaxia-logo.png" alt="Didaxia Logos" className="didaxia-logo" />
+                <div className="container-logo">
+                    <img src="./assets/images/recursos-didaxia/didaxialogo2.png" alt="Didaxia Logos" className="didaxia-logo" />
+                </div>
                 <form className="form" id="loginForm" >
                     <div className="primero segundo tercero cuarto quinto">
                         <div className="first-layer">

@@ -49,7 +49,9 @@ export default function ResetPassword() {
                                 <div className="container-full">
                                     <img src="./assets/images/recursos-didaxia/Lienzo bandera.png" alt="Didaxia Logo" className="didaxia-lienzo" />
                                     <div className="container-formb">
-                                        <img src="./assets/images/recursos-didaxia/didaxia-logo.png" alt="Didaxia Logos" className="didaxia-logo" />
+                                        <div className="container-logo">
+                                            <img src="./assets/images/recursos-didaxia/didaxialogo2.png" alt="Didaxia Logos" className="didaxia-logo" />
+                                        </div>
                                         <div className="primero segundo tercero cuarto quinto">
                                             <h2 className="logo-d septimo">Cambiar contraseña</h2>
                                         </div>
@@ -90,7 +92,7 @@ export default function ResetPassword() {
                                                     </div>
                                                 </div>
                                                 <div className="primero segundo tercero cuarto septimo octavo noveno decimo">
-                                                    
+
                                                     <button className="btn btn-init btn-sub" type="submit" onClick={handleSubmit}>
                                                         <div className="primero segundo tercero cuarto">Confirmar</div>
                                                     </button>

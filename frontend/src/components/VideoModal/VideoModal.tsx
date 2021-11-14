@@ -51,8 +51,8 @@ export default function VideoModal(props: VideoModalProps) {
                         <button className="upload-challenge" onClick={ () => {
                             if (challengeImage && challengeImage.files) {
                                 console.log('Uploadinf file');
+                                
                                 uploadImage(challengeImage.files[0], props.standNumber+1, props.selectedChallenge);
-
                             }
                         }}>Subir desafio</button>
                     </> : ''

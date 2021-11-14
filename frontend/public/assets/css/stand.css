@@ -3,11 +3,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 80%;
     min-width: 100%;    
 
 
@@ -35,7 +35,7 @@ iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
 }
 
@@ -46,12 +46,13 @@ iframe {
 
 .columna-2 {
     display: flex;
-    justify-content: right;
+    width: 20%;
+    justify-content: center;
 }
 
 .columna-2 iframe {
     position: absolute;
-    top: 160px;
+    top: 30%;
     width: 300px;
     height: auto;
     /* margin-top: 200px;  */
@@ -130,11 +131,14 @@ iframe {
 
     height: 60%;
     overflow: scroll;
+    margin-right: 20%;
     width: 200px;
+    margin-top: 20%;
 }
 
 .activities {
-
+    margin-left: 20%;
+    margin-top: 20%;
     height: 60%;
     overflow: scroll;
     width: 200px;
@@ -215,5 +219,32 @@ iframe {
     .responsive-capsules {
         display: inline;
     }
+
+  }
+
+@media only screen and (max-width: 1440px) {
+    
+    .capsulas img ,.activities img {
+        width: 150px !important;
+        height: auto !important;
+    }
+
+    .capsulas {
+        margin-right: 30%;
+        margin-top: 30% !important;
+
+    }
+    .activities {
+        margin-top: 30% !important;
+
+        margin-left: 30%;
+    }
+
+    .activities div{
+        display: flex;
+
+        align-items: flex-end;
+    }
+
 
   }

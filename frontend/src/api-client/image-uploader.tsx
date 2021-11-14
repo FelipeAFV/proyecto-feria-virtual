@@ -12,6 +12,8 @@ const uploadImage = (imageFile: any, standId: number, challengeNumber: number) =
     // if (imageFile.files && imageFile.files[0]) {
     //     console.log(imageFile.files[0]);
 
+    console.log('Subiendo desafio stand ', standId);
+
     console.log(imageFile, standId, challengeNumber);
 
         const formData = new FormData();

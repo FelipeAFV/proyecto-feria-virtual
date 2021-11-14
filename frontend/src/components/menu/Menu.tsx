@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Menu() {
 
-    const standNames: string[] = ['bienestar', 'books', 'class', 'creatividad', 'kids', 'medioambiental', 'socioemocional'];
+    const standNames: string[] = ['creatividad', 'bienestar', 'medioambiental','socioemocional','class', 'kids', 'books'];
 
 
     return (
@@ -12,25 +12,27 @@ export default function Menu() {
 
 
             <div className={'tablet-background'}>
+
+                        <div className={'close-menu'}></div>
+                        <div className={'close-menu-responsive'}></div>
                 <div className={'responsive-container'}>
+                        <div className={'lienzo-bandera'}>
 
-                <div className={'lienzo-bandera'}>
-
-                </div>
+                        </div>
 
 
-                    <div className={'logo-container'}>
+                        <div className={'logo-container'}>
 
-                        {
-                            standNames.map( (standName, index) => {
-                                return (
-                                    <Link to={`/homepage/${index}`}>
-                                        <img className={'stand-logo'} src={`assets/images/menu/logos/${standName}.png`} alt="" />
-                                    </Link>
-                                );
-                            })
-                        }
-                    </div>
+                            {
+                                standNames.map( (standName, index) => {
+                                    return (
+                                        <Link to={`/homepage/${index}`}>
+                                            <img className={'stand-logo'} src={`assets/images/menu/logos/${standName}.png`} alt="" />
+                                        </Link>
+                                    );
+                                })
+                            }
+                        </div>
                 </div>
             </div>
         </div>

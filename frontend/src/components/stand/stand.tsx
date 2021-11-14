@@ -145,14 +145,14 @@ export default function Stand() {
                             
                             </div>
                             {
-                                standNumber == 4 ? <Stand5Middle></Stand5Middle> : ''
+                                standNumber == 5 ? <Stand5Middle></Stand5Middle> : ''
                             }
                             {
-                                standNumber == 5 ? <Stand6Middle></Stand6Middle> : ''
+                                standNumber == 6 ? <Stand6Middle></Stand6Middle> : ''
                                 
                             }
                             {
-                                standNumber == 6 ? <Stand7Middle></Stand7Middle> : ''
+                                standNumber == 4 ? <Stand7Middle></Stand7Middle> : ''
 
                             }
                             <img  src={`/assets/images/recursos-didaxia/stands/${standId}/Mesa.png`} style={
@@ -187,7 +187,7 @@ export default function Stand() {
 
             <div className={'responsive-activities'}>
 
-                          { standNumber == 6 || 4 ? <h2 style={styles.headingStyle}>Programas</h2> : <h2 style={styles.headingStyle}>Actividades</h2>}
+                          { standNumber == 5 || 4 ? <h2 style={styles.headingStyle}>Programas</h2> : <h2 style={styles.headingStyle}>Actividades</h2>}
             {    currentActivity?.activities.map( (activity) => {
                                     return (
                                         <div className="video">
@@ -199,7 +199,7 @@ export default function Stand() {
                            }
             </div>
             <div className={'responsive-capsules'}>
-                          { standNumber == 6 || 4 ? '' : <h2  style={styles.headingStyle}>Capsulas Formativas</h2>}
+                          { standNumber == 5 || 4 ? '' : <h2  style={styles.headingStyle}>Capsulas Formativas</h2>}
                            {    currentCapsule?.cf.map( (capsula) => {
                                     return (
                                         <div className="video">

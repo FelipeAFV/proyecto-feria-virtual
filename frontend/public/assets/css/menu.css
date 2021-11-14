@@ -53,7 +53,7 @@
 
     display: grid;
     grid-template-rows: 0% 100%;
-    width: 50%;
+    width: 60%;
     height: 600px;
     margin: 0 auto;
     align-items: center;
@@ -74,6 +74,24 @@
 
 }
 
+.close-menu, .close-menu-responsive {
+  background-image: url('/assets/images/recursos-didaxia/X.png');
+  width: 35px;
+  height: 35px;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+  position: absolute;
+  top: 70px;
+  left: 25%;
+  transition: 0.5s;
+}
+
+.close-menu-responsive {
+  display: none;
+}
+
 .stand-logo {
     width: 100px;
     margin: 10px;
@@ -81,10 +99,10 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    /* For mobile phones: */
-
-    .tablet-background {
-        background-color: #3d3f8e;
+  /* For mobile phones: */
+  
+  .tablet-background {
+    background-color: #3d3f8e;
         background-image: unset;
         min-height: 100%;
         position: static;
@@ -100,6 +118,18 @@
     .stand-logo {
         margin: 10px;
     }
+
+
+    .close-menu {
+      display: none;
+
+    }
+
+    .close-menu-responsive {
+      display: inline;
+      top: 80%;
+      left: 10%;
+    }
     
 
   }
@@ -113,6 +143,8 @@
     
     
     }
+
+
     
 
   }
@@ -130,5 +162,15 @@
         width: 80px;
     }
     
-
   }
+@media only screen and (max-width: 1250px) {
+    /* For mobile phones: */
+
+  
+    .close-menu {
+      left: 20%;
+      transition: 0.5s;
+    }
+    
+  }
+  

@@ -36,11 +36,11 @@ const createChallenges = async () => {
 export { createChallenges, createStands};
 
 const stands: Stand[] = [
-    { id: 1, theme: 'Socioemocional'},
-    { id: 2, theme: 'Medioambiente' },
-    { id: 3, theme: 'Bienestar'},
-    { id: 4, theme: 'Creatividad'},
-    { id: 5, theme: 'Kids'},
-    { id: 6, theme: 'Books'},
-    { id: 7, theme: 'Class'},
+    { id: 4, theme: 'Socioemocional'},
+    { id: 3, theme: 'Medioambiente' },
+    { id: 2, theme: 'Bienestar'},
+    { id: 1, theme: 'Creatividad'},
+    { id: 6, theme: 'Kids'},
+    { id: 7, theme: 'Books'},
+    { id: 5, theme: 'Class'},
 ]

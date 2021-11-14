@@ -6,7 +6,7 @@ export default function Stand5Middle() {
         <>
         <div style={styles.flexColumnContainer}>
 
-            <img style={styles.logoStyle} src="/assets/images/recursos-didaxia/stands/4/logo.png" alt="logo kids" />
+            <img style={styles.logoStyle} src="/assets/images/recursos-didaxia/stands/5/logo.png" alt="logo kids" />
         </div>
         </>
     )

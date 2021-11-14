@@ -45,20 +45,24 @@
 
 export const standsImages = [
     {
-        name: 'socioemocional',
-        url:'socioemocional-sin-luz.png',
-    },
-    {
-        name: 'medioambiente',
-        url: 'medioambiente-sin-luz.png',
+        name: 'creatividad',
+        url:'creatividad-sin-luz.png',
     },
     {
         name: 'bienestar',
         url: 'bienestar-sin-luz.png',
     },
     {
-        name: 'creatividad',
-        url:'creatividad-sin-luz.png',
+        name: 'medioambiente',
+        url: 'medioambiente-sin-luz.png',
+    },
+    {
+        name: 'socioemocional',
+        url:'socioemocional-sin-luz.png',
+    },
+    {
+        name: 'class',
+        url: 'class-sin-luz.png',
     },
     {
         name: 'kids',
@@ -67,10 +71,6 @@ export const standsImages = [
     {
         name: 'books',
         url: 'books-sin-luz.png',
-    },
-    {
-        name: 'class',
-        url: 'class-sin-luz.png',
     },
 
     

@@ -30,7 +30,7 @@ export default function Login() {
                 timer: 2000
             });
 
-            history.push('/totem');
+            history.push('/menu');
 
 
         } catch(e: any) {

@@ -13,6 +13,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  padding-top: 5%;
 
 }
 
@@ -44,8 +45,9 @@
 
 
 .park-stand-container {
-    margin-top: 100px;
+    margin-top: 70px;
     display: flex;
+   
     /* align-items: center; */
     justify-content: space-around;
     flex-direction: row;
@@ -67,6 +69,7 @@
     display: grid;
     grid-template-columns: 30% 30% 30%;
     justify-content: space-between;
+    row-gap: 50%;
 
 }
 .third-stand-container img {

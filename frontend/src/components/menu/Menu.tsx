@@ -1,9 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useHistory} from 'react-router-dom';
 
 export default function Menu() {
 
     const standNames: string[] = ['creatividad', 'bienestar', 'medioambiental','socioemocional','class', 'kids', 'books'];
+
+    const history = useHistory();
+
+    const navigateParkView = () => {
+        console.log('Navegando a park view');
+        history.push('/homepage');
+    }
 
 
     return (
@@ -13,7 +20,7 @@ export default function Menu() {
 
             <div className={'tablet-background'}>
 
-                        <div className={'close-menu'}></div>
+                        <div className={'close-menu'} onClick={navigateParkView}></div>
                         <div className={'close-menu-responsive'}></div>
                 <div className={'responsive-container'}>
                         <div className={'lienzo-bandera'}>

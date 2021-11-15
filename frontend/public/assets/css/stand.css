@@ -1,5 +1,5 @@
 .stand-container {
-    margin-top: 40px;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -14,6 +14,8 @@
     
     
 }
+
+
 
 iframe {
     width: 80%;
@@ -134,9 +136,11 @@ iframe {
     margin-right: 20%;
     width: 200px;
     margin-top: 20%;
+    align-items: center;
 }
 
 .activities {
+    align-items: center;
     margin-left: 20%;
     margin-top: 20%;
     height: 60%;

@@ -7,7 +7,7 @@ export default function Totem() {
     return (
         <>
           <div className={'totem-background scrollable-content'}>
-                <div style={totemStyle} className={''}>
+                <div style={totemStyle} className={'totem'}>
                 <div style={videoContainer}>
                     <iframe src="https://www.youtube.com/embed/cFFcK3BM_No" 
                     title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; 

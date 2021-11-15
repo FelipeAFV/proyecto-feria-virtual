@@ -149,7 +149,7 @@ export default function Register() {
         if (isFormValid(formFieldsStatus)) {
             await onRegister(registerValues);
             console.log('Redirigiendo a totem');
-            history.push('/totem');
+            history.push('/menu');
 
 
             swal({

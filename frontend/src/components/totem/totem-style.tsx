@@ -2,7 +2,7 @@ import { HTMLAttributes, HtmlHTMLAttributes } from "react";
 import { CSSProperties } from "react";
 const totemStyle: CSSProperties = {
     backgroundImage: 'url(/assets/images/totem/totem.png)',
-    marginTop: '40px',
+
     backgroundPosition: 'center center',
     backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',

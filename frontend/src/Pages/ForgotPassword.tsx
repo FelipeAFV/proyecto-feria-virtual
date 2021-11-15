@@ -37,7 +37,9 @@ export default function ForgotPassword() {
                                 <div className="container-full">
                                     <img src="./assets/images/recursos-didaxia/Lienzo bandera.png" alt="Didaxia Logo" className="didaxia-lienzo" />
                                     <div className="container-formb">
-                                        <img src="./assets/images/recursos-didaxia/didaxia-logo.png" alt="Didaxia Logos" className="didaxia-logo" />
+                                        <div className="container-logo">
+                                            <img src="./assets/images/recursos-didaxia/didaxialogo2.png" alt="Didaxia Logos" className="didaxia-logo" />
+                                        </div>
                                         <div className="primero segundo tercero cuarto quinto">
                                             <h2 className="logo-d septimo">¿Problemas para entrar?</h2>
                                             <p className="logo-d octavob ">Introduce tu correo electrónico y te enviaremos un enlace para que vuelvas a entrar en tu cuenta.</p>

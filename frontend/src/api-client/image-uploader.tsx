@@ -1,4 +1,5 @@
 import axios, { AxiosRequestConfig } from "axios";
+import swal from 'sweetalert';
 
 const config: AxiosRequestConfig = {
 
@@ -22,7 +23,11 @@ const uploadImage = (imageFile: any, standId: number, challengeNumber: number) =
         formData.append('challengeNumber', challengeNumber.toString());
         formData.append('challengeImage', imageFile);
         console.log('Aqui esta el form data',formData);
-
+        swal({
+            title:"Se ha subido con éxito",
+            icon: "success",
+            timer: 2000
+        });
 
         axios.post('/api/uploadChallenge', formData, config );
 

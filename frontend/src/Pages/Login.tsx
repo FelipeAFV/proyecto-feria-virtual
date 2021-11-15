@@ -44,33 +44,6 @@ export default function Login() {
         setShow(!showPost)
     }
 
-
-    /*
-    const dispátch = useDispatch();
-    function onLogin(e) {
-        e.preventDefault();
-        let error= false;
-        const errorObj = {...errorObj};
-        if (usename === '') {
-            errorObj.username = 'Usuario requerido';
-            error = true;
-        }
-        
-    
-        if(password === ''){
-            errorObj.password = 'Contraseña requerida';
-            error = true;
-        }
-
-        setErrors(errorObj);
-        if(error) return;
-        dispatch(loadingToggleAction(true));
-        dispatch(loginAcion(username,password, props.history));
-    }
-    
-    */
-
-
     return (
         <div>
             <section>
@@ -81,7 +54,9 @@ export default function Login() {
                                 <div className="container-full">
                                     <img src="./assets/images/recursos-didaxia/Lienzo bandera.png" alt="Didaxia Logo" className="didaxia-lienzo" />
                                     <div className="container-form">
-                                        <img src="./assets/images/recursos-didaxia/didaxia-logo.png" alt="Didaxia Logos" className="didaxia-logo" />
+                                        <div className="container-logo">
+                                            <img src="./assets/images/recursos-didaxia/didaxialogo2.png" alt="Didaxia Logos" className="didaxia-logo" />
+                                        </div>
                                         <form onSubmit={login} className="form" id="loginForm" method="POST">
                                             <div className="primero segundo tercero cuarto quinto">
                                                 <div className="first-layer">
@@ -158,10 +133,10 @@ export default function Login() {
             </section>
             <nav className="logo-container">
                 <ul>
-                    <li><a href="#"><i className="fab fa-facebook-square"></i></a></li>
-                    <li><a href="#"><i className="fab fa-instagram-square"></i></a></li>
-                    <li><a href="#"><i className="fab fa-whatsapp-square"></i></a></li>
-                    <li><a href="#"><i className="fab fa-youtube"></i></a></li>
+                    <li><Link to="https://www.facebook.com/DidaxiaGrupoEducativo/"><i className="fab fa-facebook-square"></i></Link></li>
+                    <li><Link to="https://www.instagram.com/grupoeducativodidaxia/?hl=es"><i className="fab fa-instagram-square"></i></Link></li>
+                    <li><Link to="#"><i className="fab fa-whatsapp-square"></i></Link></li>
+                    <li><Link to="https://www.youtube.com/channel/UCZxegbGc6r697zu7Y5EjNGw"><i className="fab fa-youtube"></i></Link></li>
                 </ul>
 
 

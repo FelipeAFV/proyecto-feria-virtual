@@ -131,7 +131,7 @@ export default function Login() {
 
 
             </section>
-            <nav className="logo-container">
+            <nav className="logo-containerb">
                 <ul>
                     <li><Link to="https://www.facebook.com/DidaxiaGrupoEducativo/"><i className="fab fa-facebook-square"></i></Link></li>
                     <li><Link to="https://www.instagram.com/grupoeducativodidaxia/?hl=es"><i className="fab fa-instagram-square"></i></Link></li>

@@ -35,6 +35,14 @@ const activityVideos = [
     { id: 2, video: <iframe width="560" height="315"  src="https://www.youtube.com/embed/c782y9SMAJk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>,
 imagePath: 'assets/images/actividades/stand1/actividad1.png'},
     ]},
+    { standId: 5, activities: [
+        { id: 0, video: <iframe width="560" height="315" src="https://www.youtube.com/embed/CoRtJF_lBa4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>,
+            imagePath: 'assets/images/capsulas/stand1/capsula1.png'},
+        { id: 1, video: <iframe width="560" height="315" src="https://www.youtube.com/embed/0VSaI9wLPls" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>,
+            imagePath: 'assets/images/capsulas/stand1/capsula1.png'},
+        { numider: 2, video: <iframe width="560" height="315" src="https://www.youtube.com/embed/c782y9SMAJk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>,
+            imagePath: 'assets/images/capsulas/stand1/capsula1.png'},
+    ]},
     { standId: 4, activities: [
         { id: 0, video: <iframe width="560" height="315"  src="https://www.youtube.com/embed/Ieoz8Ok6DgU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>,
     imagePath: 'assets/images/actividades/stand1/actividad1.png'},

@@ -44,7 +44,7 @@ body {
 
 
 .didaxia-lienzo{
-    padding-bottom: 30px;
+    padding-bottom: 80px;
     max-width: 82%;
 }
 
@@ -586,7 +586,7 @@ button{
     }
     .didaxia-lienzo{
         max-width: 100%;
-        margin-top:100px;
+        
     }
     .container-full{
         min-height:100vh;
@@ -633,17 +633,14 @@ button{
     /*Se ejecutaran estos estilos*/
     .container-form{
         max-width: 350px;
-        margin-bottom: 0;
+        margin-top:0px;
         width: auto;
     }
     .didaxia-lienzo{
-
+        max-width: 300px;
         margin-top:180px;
         transform:scale(1.6);
-    }
-
-    .container-full{
-        padding-top:0 0 0;
+        padding-top:80px;
     }
 }
 

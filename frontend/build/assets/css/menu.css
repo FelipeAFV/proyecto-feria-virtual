@@ -68,6 +68,12 @@
 
     position: absolute;
     left: 5%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 10px 0 10px 0;
     top: 40%;
 
 
@@ -107,6 +113,9 @@
         background-image: unset;
         min-height: 100%;
         position: static;
+    }
+    .park-background {
+      padding-top: 0;
     }
 
     .responsive-container {

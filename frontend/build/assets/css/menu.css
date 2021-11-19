@@ -55,7 +55,7 @@
     grid-template-rows: 0% 100%;
     width: 60%;
     height: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
     align-items: center;
 
 }
@@ -153,28 +153,32 @@
     
     
     }
-
-
     
-
+    
+    
+    
   }
-@media only screen and (max-height: 600px) {
+  @media only screen and (max-height: 600px) {
     /* For mobile phones: */
-
+    
     .logo-container {
-        
-        top: 20%;
-    
-    
-    
+      
+      top: 20%;
+      
+      
+      
     }
     .stand-logo {
-        width: 80px;
+      width: 80px;
     }
     
   }
-@media only screen and (max-width: 1250px) {
+  @media only screen and (max-width: 1250px) {
     /* For mobile phones: */
+    
+        .responsive-container {
+          margin-top: 0;
+        }
 
   
     .close-menu {

@@ -3,7 +3,12 @@
 @media (max-width: 768px) {
 
     div.info-image-container img.info-image {
-        width: 60% !important;
+        width: 40% !important;
+    }
+
+    .info-image-container {
+        display: flex;
+        justify-content: center;
     }
 
   }

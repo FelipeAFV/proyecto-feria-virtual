@@ -1,0 +1,186 @@
+.tablet-background {
+    background-image: url('../images/menu/tablet.png');
+    /* background-attachment: scroll; */
+    background-size: contain;
+    background-position-x: center;
+    background-repeat: no-repeat;
+      /* Set rules to fill background */
+  min-height: 90%;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+
+	text-align: center;
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  position: absolute;
+  top: 5%;
+;
+
+}
+
+.lienzo-bandera {
+    background-image: url('/assets/images/menu/lienzo-bandera.png');
+    /* background-attachment: scroll; */
+    background-size: contain;
+    background-position-x: center;
+    background-repeat: no-repeat;
+      /* Set rules to fill background */
+  min-height: 20%;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+
+	text-align: center;
+  /* Set up positioning */
+  position: absolute;
+  top: 5%;
+
+
+    margin: 0 auto;
+
+  position: absolute;
+
+
+;
+
+}
+
+.responsive-container {
+
+    display: grid;
+    grid-template-rows: 0% 100%;
+    width: 60%;
+    height: 600px;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+.logo-container {
+    grid-row: 2 / span 2;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+
+    position: absolute;
+    left: 5%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+    top: 40%;
+
+
+
+}
+
+.close-menu, .close-menu-responsive {
+  background-image: url('/assets/images/recursos-didaxia/X.png');
+  width: 35px;
+  height: 35px;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+  position: absolute;
+  z-index: 999;
+  top: 70px;
+  left: 25%;
+  transition: 0.5s;
+}
+
+.close-menu-responsive {
+  display: none;
+}
+
+.stand-logo {
+    width: 100px;
+    margin: 10px;
+
+}
+
+@media only screen and (max-width: 1024px) {
+  /* For mobile phones: */
+  
+  .tablet-background {
+    background-color: #3d3f8e;
+        background-image: unset;
+        min-height: 100%;
+        position: static;
+    }
+    .park-background {
+      padding-top: 0;
+    }
+
+    .responsive-container {
+        width: 100%;
+    }
+
+    .lienzo-bandera {
+        top: 0;
+    }
+    .stand-logo {
+        margin: 10px;
+    }
+
+
+    .close-menu {
+      display: none;
+
+    }
+
+    .close-menu-responsive {
+      display: inline;
+      top: 80%;
+      left: 10%;
+    }
+    
+
+  }
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+
+    .logo-container {
+        
+        top: 20%;
+    
+    
+    
+    }
+
+
+    
+
+  }
+@media only screen and (max-height: 600px) {
+    /* For mobile phones: */
+
+    .logo-container {
+        
+        top: 20%;
+    
+    
+    
+    }
+    .stand-logo {
+        width: 80px;
+    }
+    
+  }
+@media only screen and (max-width: 1250px) {
+    /* For mobile phones: */
+
+  
+    .close-menu {
+      left: 20%;
+      transition: 0.5s;
+    }
+    
+  }
+  

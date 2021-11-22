@@ -2,11 +2,13 @@ import { CSSProperties } from "react";
 
 const imageStyle: CSSProperties = {
     height: 'auto',
-    width: '80%',
+    width: '300px',
+    // margin: 'auto'
 }
 
 const arrowStyle: CSSProperties = {
-
+    cursor: 'pointer',
+    zIndex: 99999999
 };
 
 const flexRowContainer: CSSProperties = {

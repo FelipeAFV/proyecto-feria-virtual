@@ -34,7 +34,7 @@
     display: grid;
     grid-template-rows: 20% 20% 20% 20%;
     /* grid-template-rows: 80px 80px 80px 80px; */
-
+    padding-top: 5%;
 
 }
 
@@ -127,6 +127,31 @@
     .first-stand-container {
         display: grid;
         grid-template-columns: 40%;
+    }
+    
+    .stand-5 {
+      
+    }
+
+  }
+
+@media only screen and (max-width: 1900px) and ( min-height: 1000px) {
+
+
+    .first-stand-container {
+        margin-top: 100px;
+    }
+    
+    .stand-5 {
+      
+    }
+
+  }
+@media only screen and (max-width: 1300px) and ( min-height: 1000px) {
+
+
+    .first-stand-container {
+        margin-top: 150px;
     }
     
     .stand-5 {

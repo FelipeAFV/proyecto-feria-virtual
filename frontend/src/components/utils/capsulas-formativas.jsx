@@ -36,12 +36,7 @@ const CFVideos = [
             imagePath: 'assets/images/capsulas/stand1/capsula1.png'},
         { number: 2, video: <iframe width="560" height="315" src="https://www.youtube.com/embed/hXqFQIbYgGk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>,
             imagePath: 'assets/images/capsulas/stand1/capsula1.png'},
-        { number: 3, video: <iframe width="560" height="315" src="https://www.youtube.com/embed/CoRtJF_lBa4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>,
-            imagePath: 'assets/images/capsulas/stand1/capsula1.png'},
-        { number: 4, video: <iframe width="560" height="315" src="https://www.youtube.com/embed/0VSaI9wLPls" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>,
-            imagePath: 'assets/images/capsulas/stand1/capsula1.png'},
-        { number: 5, video: <iframe width="560" height="315" src="https://www.youtube.com/embed/c782y9SMAJk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>,
-            imagePath: 'assets/images/capsulas/stand1/capsula1.png'},
+       
     ]},
     { standId: 6, cf: []},
     { standId: 4, cf: [

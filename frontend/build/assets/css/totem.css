@@ -17,3 +17,26 @@
     
     
 }
+
+.totem {
+  margin-top: 20%;
+}
+
+@media only screen and (max-height: 1080px) {
+  
+  .totem {
+
+    margin-top: 15%;
+  }
+
+
+}
+@media only screen and (max-height: 850px) {
+  
+  .totem {
+
+    margin-top: 7%;
+  }
+
+
+}

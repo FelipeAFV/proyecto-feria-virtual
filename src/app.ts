@@ -31,7 +31,6 @@ if (process.env.NODE_ENV == 'production') {
         database: 'heroku_13850906d1c05ef',
         type: "mysql",
         port: 3306,
-        synchronize: true,
         entities: [
             "dist/model/entity/**/*.js"
         ],

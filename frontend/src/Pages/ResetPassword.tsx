@@ -72,19 +72,7 @@ export default function ResetPassword() {
 
                                                     </div>
                                                 </div>
-                                                <div className="first-layer">
-                                                    <div className="user-container">
-                                                        <label className="label-user inputd">
-                                                            <span className="user-input"> Repetir contraseña</span>
-                                                            <input aria-label="Repita contraseña" aria-required="true"
-                                                                autoCapitalize="off" autoCorrect="off" name="password"
-                                                                type={showPost ? 'text' : 'password'} className="input first second focus-visible" value={newPassword} onChange={(e) => setNewpass({
-                                                                    password,
-                                                                    newPassword: e.target.value
-                                                                })} />
-                                                        </label>
-                                                    </div>
-                                                </div>
+                                                
                                                 <div className="fix">
                                                     <div className="primero segundo tercero cuarto sexto septimoa">
                                                         <button className="btn btn-show btn-btn"

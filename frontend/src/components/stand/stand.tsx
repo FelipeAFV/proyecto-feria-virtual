@@ -212,12 +212,12 @@ export default function Stand() {
             </div>
 
             <div className={'menu-icons'}>
-                <a href="">
-                    <img src="/assets/images/recursos-didaxia/stands/icons/Indice.png" alt="" />
-                </a>
                 <Link to='homepage'>
                     <img src="/assets/images/recursos-didaxia/stands/icons/Volver.png" alt="" />
                 </Link>
+                <a href="">
+                    <img src="/assets/images/recursos-didaxia/stands/icons/Indice.png" alt="" />
+                </a>
             </div>
 
             <div className={'custom-modal'} style={ {display: displayChallenge}} >

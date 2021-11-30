@@ -35,6 +35,15 @@
   
   .totem {
 
+    margin-top: 15%;
+  }
+
+
+}
+@media only screen and (max-height: 650px) {
+  
+  .totem {
+
     margin-top: 7%;
   }
 

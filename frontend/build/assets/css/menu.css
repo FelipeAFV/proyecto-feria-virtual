@@ -22,6 +22,45 @@
 
 }
 
+.menu-background {
+  background-image: url('../images/recursos-didaxia/vista-parque.png');
+  /* background-attachment: scroll; */
+  background-size: cover;
+    /* Set rules to fill background */
+min-height: 100%;
+
+/* Set up proportionate scaling */
+width: 100%;
+height: 100%;
+
+/* Set up positioning */
+position: fixed;
+top: 0;
+left: 0;
+
+
+}
+
+.first-logo-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+
+
+  justify-content: center;
+}
+
+.second-logo-container {
+  display: flex;
+
+  align-items: flex-start;
+  flex-direction: row;
+
+
+  justify-content: center;
+}
+
+
 .lienzo-bandera {
     background-image: url('/assets/images/menu/lienzo-bandera.png');
     /* background-attachment: scroll; */
@@ -61,11 +100,12 @@
 }
 
 .logo-container {
-    grid-row: 2 / span 2;
-    display: flex;
+    /* grid-row: 2 / span 2; */
+    display: grid;
+    grid-template-rows: 40% 40%;
     flex-wrap: wrap;
     width: 90%;
-
+  height: 500px;
     position: absolute;
     left: 5%;
     -webkit-box-orient: horizontal;
@@ -114,8 +154,8 @@
         min-height: 100%;
         position: static;
     }
-    .park-background {
-      padding-top: 0;
+    .menu-background {
+      
     }
 
     .responsive-container {
@@ -153,7 +193,11 @@
     
     
     }
+
     
+    .stand-logo {
+      width: 80px;
+    }
     
     
     
@@ -169,7 +213,7 @@
       
     }
     .stand-logo {
-      width: 80px;
+      width: 100px;
     }
     
   }
@@ -185,6 +229,32 @@
       left: 20%;
       transition: 0.5s;
     }
+    
+  }
+  
+  @media only screen and (min-width: 1440px) {
+    /* For mobile phones: */
+    
+     .stand-logo {
+       width: 140px;
+     }
+    
+  }
+  @media only screen and (max-width: 440px) {
+    /* For mobile phones: */
+    
+     .stand-logo {
+       width: 60px;
+     }
+    
+  }
+  
+  @media only screen and (max-height: 800px) {
+    /* For mobile phones: */
+    
+     .logo-container {
+       top: 30%;
+     }
     
   }
   

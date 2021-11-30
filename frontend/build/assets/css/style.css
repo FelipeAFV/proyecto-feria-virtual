@@ -552,7 +552,10 @@ button{
     .didaxia-lienzo{
         max-width: 100%;
         margin-top:300px;
-        transform:scale(1.2);
+        //transform:scale(1.2);
+    }
+    .container-full{
+        min-height: 0px;
     }
 
 }
@@ -585,7 +588,7 @@ button{
         
     }
     .didaxia-lienzo{
-        max-width: 100%;
+        max-width: 80%;
         
     }
     .container-full{
@@ -598,21 +601,40 @@ button{
     }
 }
 
+@media (max-width:1920px){
+    /*Se ejecutaran estos estilos*/
+
+    .didaxia-lienzo{
+        max-width: 100%;
+        padding-bottom:60px;
+        
+    }
+    .container-full{
+        padding-top:20px;
+    }
+    .container-form{
+        margin-top:90px;
+    }
+
+}
+
 
 @media (max-width:1024px){
     /*Se ejecutaran estos estilos*/
     .container-form{
         max-width: 350px;
-        margin-bottom: 0;
+        margin: 0 0 0 0;
         width: auto;
     }
     .didaxia-lienzo{
         max-width: 100%;
-        margin-top:170px;
+        margin:0 0 0 0;
+        padding-top:120px
     }
 
     .container-full{
         padding-top:0 0 0;
+        min-height:0px;
     }
     .footer{
         min-height:100vh;
@@ -637,10 +659,14 @@ button{
         width: auto;
     }
     .didaxia-lienzo{
-        max-width: 300px;
-        margin-top:180px;
-        transform:scale(1.6);
+        max-width: 100%;
+        
+        //transform:scale(1.6);
         padding-top:80px;
+    }
+    .container-full{
+        min-height:0px;
+
     }
 }
 

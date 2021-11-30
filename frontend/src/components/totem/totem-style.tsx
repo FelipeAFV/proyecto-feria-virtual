@@ -11,7 +11,8 @@ const totemStyle: CSSProperties = {
     position: 'relative',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    left: '-10px'
 }
 
 const linkStyle: CSSProperties = {
@@ -23,7 +24,8 @@ const videoContainer: CSSProperties = {
   position: 'relative',
   bottom: '40px',
   left: '10px',
-  width: '400px'
+  width: '100%',
+  maxWidth: '320px'
 }
 
 const continueButton: CSSProperties = {

@@ -320,6 +320,9 @@ input{
     align-items: stretch;
     
 }
+@viewport {  
+    orientation: portrait;  
+  }  
 .primero{
     align-content: stretch;
     

@@ -171,3 +171,10 @@
     }
 
   }
+@media only screen and (max-height: 1380px) and ( min-height: 1120px) {
+
+
+   .first-stand-container {
+       margin-top: 200px;
+   }
+  }

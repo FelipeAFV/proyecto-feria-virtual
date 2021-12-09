@@ -15,7 +15,7 @@ export default function Totem() {
                     allowFullScreen></iframe>
 
                 </div>
-                    <Link style={{...linkStyle, ...continueButton}} to="/homepage">
+                    <Link style={{...linkStyle, ...continueButton}} to="/menu">
                         <div >
                             Continuar
                         </div>

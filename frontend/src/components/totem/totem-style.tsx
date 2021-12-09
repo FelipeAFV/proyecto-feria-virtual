@@ -6,7 +6,7 @@ const totemStyle: CSSProperties = {
     backgroundPosition: 'center center',
     backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',
-    height: '600px',
+    // height: '600px',
     minWidth: '100%',
     position: 'relative',
     display: 'flex',

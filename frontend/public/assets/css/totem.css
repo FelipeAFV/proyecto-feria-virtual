@@ -20,6 +20,7 @@
 
 .totem {
   margin-top: 20%;
+  height: 600px;
 }
 
 @media only screen and (max-height: 1080px) {
@@ -49,3 +50,67 @@
 
 
 }
+
+@media only screen and (max-height: 1050px) {
+    .columna-2 iframe {
+        top: 35%;
+    }
+}
+
+
+@media (min-width: 700px) and (max-width: 800px) and (min-height: 1000px) and (max-height: 1100px) {
+
+  /*
+   IPAD
+  */
+  .totem {
+
+    margin-top: 27%;
+  }
+
+ 
+
+}
+
+@media (min-width: 1000px) and (max-width: 1100px) and (min-height: 1200px) and (max-height: 1380px) {
+
+  .totem {
+
+    margin-top: 50%;
+  }
+
+ 
+
+}
+
+
+
+
+@media (min-width: 1000px) and (max-width: 1100px) and (min-height: 1200px) and (max-height: 1380px) {
+  
+  .totem {
+    
+    margin-top: 40%;
+    height: 800px;
+  }
+  
+  
+  
+}
+
+
+@media (min-width: 1600px)  {
+
+  .totem {
+    margin-top: 10%;
+    height: 800px;
+  }
+}
+@media (max-height: 900px) and (min-width: 1000px) {
+
+  .totem {
+    margin-top: 7%;
+    height: 600px;
+  }
+}
+

@@ -17,6 +17,7 @@ import Stand6Middle from '../stand-middle-content/stand6/Stand6Middle';
 import Stand7Middle from '../stand-middle-content/stand7/Stand7Middle';
 import styles from './stand-styles';
 import Stand5Middle from '../stand-middle-content/stand5/Stand5Middle';
+import { useMediaQuery } from "react-responsive";
 
 interface StandParams {
     standId: string
@@ -37,7 +38,9 @@ export default function Stand() {
     const [ displayChallenge, setDisplayChallenge] = useState('none');
     const [ isChallengeSelected, setIsChallengeSelected] = useState(true);
 
-
+    
+    const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
+    const isTablet = useMediaQuery({ query: `(min-width: 761px) and (max-width: 1280px) ` });
 
     const [ selectedChallenge, setSelectedChallenge] = useState(1);
 
@@ -112,14 +115,14 @@ export default function Stand() {
         }}>
             <div className={'stand-container'} style={
                 {
-                    backgroundImage: `url('/assets/images/recursos-didaxia/stands/${standId}/Panel.png')`,
+                    backgroundImage: `url('/assets/images/recursos-didaxia/stands/${standId}/${isMobile ? 'panel-movile' : (isTablet ? 'panel-tablet' : 'Panel')}.png')`,
                     
                     
                 }}>
                     
 
 
-                    <div className="columna columna-1">
+                    <div className="columna columna-1 " style={(standNumber === 4 || standNumber == 6) && isMobile? { display: 'none'} : {}}>
 
                         <div className={'capsulas'}>
 
@@ -136,7 +139,7 @@ export default function Stand() {
                            }
                         </div>
                     </div>
-                    <div className="columna columna-2">
+                    <div className="columna columna-2" style={(standNumber === 4 || standNumber == 6) && isMobile? { margin: 'auto', width: '100%'} : {}}>
                             { standVideos[standNumber].mainVideo}
 
                             <div className={'trofeo-container'}>
@@ -164,7 +167,7 @@ export default function Stand() {
                             </img>
 
                     </div>
-                    <div className="columna columna-3">
+                    <div className="columna columna-3" style={(standNumber === 4 || standNumber == 6) && isMobile? { display: 'none'} : {}}>
 
                         <div className="activities">
                         {    currentActivity?.activities.map( (activity) => {

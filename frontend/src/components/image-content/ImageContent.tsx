@@ -8,9 +8,9 @@ interface ImageContentProps {
 }
 
 const style = {
-    width: '200px',
-    height: '130px',
-    marginBottom: '10px'
+    // width: '200px',
+    // height: '130px',
+    // marginBottom: '10px'
 }
 
 export default function ImageContent(props: ImageContentProps) {

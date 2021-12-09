@@ -49,6 +49,22 @@ left: 0;
 
   justify-content: center;
 }
+.third-logo-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+
+
+  justify-content: center;
+}
+.forth-logo-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+
+
+  justify-content: center;
+}
 
 .second-logo-container {
   display: flex;
@@ -239,6 +255,7 @@ left: 0;
        width: 140px;
      }
     
+ 
   }
   @media only screen and (max-width: 440px) {
     /* For mobile phones: */
@@ -246,6 +263,21 @@ left: 0;
      .stand-logo {
        width: 60px;
      }
+     
+    }
+    @media only screen and (max-width: 1024px) {
+      /* For mobile phones: */
+      .stand-logo {
+        width: 80px;
+      }
+    
+    .logo-container {
+
+      grid-template-rows: 20% 20% 20% 20%;
+  
+  
+  
+    }
     
   }
   
@@ -258,3 +290,57 @@ left: 0;
     
   }
   
+
+
+@media (min-width: 700px) and (max-width: 800px) and (min-height: 1000px) and (max-height: 1100px) {
+
+  /*
+   IPAD
+  */
+
+  .logo-container {
+    height: 700px;
+  }
+
+  .stand-logo {
+    width: 100px;
+    margin: 0 50px;
+  }
+ 
+
+
+ 
+
+}
+
+@media (min-width: 1000px) and (max-width: 1100px) and (min-height: 1200px) and (max-height: 1380px) {
+
+  /*
+   IPAD pro
+  */
+  .logo-container {
+    height: 1000px;
+  }
+
+  .stand-logo {
+    width: 100px;
+    margin: 0 50px;
+  }
+ 
+
+}
+
+
+@media (max-height: 650px) {
+
+  /*
+   IPAD pro
+  */
+  .logo-container {
+    top: 15%;
+  }
+
+  
+
+}
+

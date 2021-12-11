@@ -14,9 +14,8 @@
       top: 0;
       left: 0;
     
-    
-    
 }
+    
 
 .totem {
   margin-top: 20%;
@@ -50,6 +49,23 @@
 
 
 }
+@media only screen and (min-width: 800px) and (min-height: 900px) {
+  
+  .totem iframe {
+    height: 300px;
+    width: 400px;
+  }
+
+}
+@media only screen and (max-height: 899px) {
+  
+  .totem iframe {
+    height: 250px;
+    width: 300px;
+  }
+
+
+}
 
 @media only screen and (max-height: 1050px) {
     .columna-2 iframe {
@@ -66,6 +82,11 @@
   .totem {
 
     margin-top: 27%;
+  }
+
+  .totem iframe {
+    height: 250px;
+    width: 300px;
   }
 
  

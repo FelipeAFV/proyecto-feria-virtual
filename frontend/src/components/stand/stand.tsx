@@ -115,7 +115,7 @@ export default function Stand() {
         }}>
             <div className={'stand-container'} style={
                 {
-                    backgroundImage: `url('/assets/images/recursos-didaxia/stands/${standId}/${isMobile ? 'panel-movile' : (isTablet ? 'panel-tablet' : 'Panel')}.png')`,
+                    backgroundImage: `url('/assets/images/recursos-didaxia/stands/${standId}/${isMobile ? 'panel-mobile' : (isTablet ? 'panel-tablet' : 'Panel')}.png')`,
                     
                     
                 }}>

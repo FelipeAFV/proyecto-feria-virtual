@@ -25,7 +25,8 @@ const videoContainer: CSSProperties = {
   bottom: '40px',
   left: '10px',
   width: '100%',
-  maxWidth: '320px'
+
+  maxWidth: '600px'
 }
 
 const continueButton: CSSProperties = {

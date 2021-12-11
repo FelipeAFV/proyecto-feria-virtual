@@ -53,6 +53,8 @@ class ChallengeController {
             const profileRepo = getRepository(Profile);
             const currentProfile =  await profileRepo.findOne({ where: { user: req.user}});
     
+            console.log('Usuario buscando challenges', req.user);
+            console.log('Profile buscando challenges', currentProfile);
             const challenges = await challengeRepo.find({ relations: ['profile','challenge', 'challenge.stand'], where: { challenge: { stand: { id: standId}}, 
                 profile: currentProfile}});
 

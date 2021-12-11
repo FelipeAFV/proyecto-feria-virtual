@@ -195,7 +195,7 @@ app.post('/api/uploadChallenge', upload.single('challengeImage'), async (req: Re
         const challengeCompletedRepo = getRepository(ChallengeComplete);
 
         const challengeCompleteRepeated = await challengeCompletedRepo.findOne({ where: {
-            challenge: challenge
+            challenge: challenge, profile: profile
         }});
         if (challengeCompleteRepeated) {
             console.log('Desafio ya completado');

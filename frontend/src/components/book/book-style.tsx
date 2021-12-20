@@ -9,7 +9,8 @@ const pdfContainerStyle: CSSProperties = {
 
 const arrowStyle: CSSProperties = {
     height: '2em',
-    margin: '1em'
+    margin: '1em',
+    zIndex: 9999999
 };
 
 

@@ -4,6 +4,7 @@ import { loadPdf } from '../../api-client/pdf-loader';
 import { arrowStyle, pdfContainerStyle } from './book-style';
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { IconContext } from 'react-icons/lib';
+import { useMediaQuery } from 'react-responsive';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -47,18 +48,21 @@ export default function Book() {
         setCurrentPage(currentPage-1);
     }
 
+    const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
+    const isTablet = useMediaQuery({ query: `(min-width: 761px) and (max-width: 1280px) ` });
+
 
     return (
         <>
-            <div style={pdfContainerStyle}>
+            {/* <div style={pdfContainerStyle}> */}
             <IconContext.Provider value={{size: '20px'}}>
-                <FaArrowLeft style={arrowStyle} onClick={prevPage}/>
+                <FaArrowLeft className='book-arrow' style={arrowStyle} onClick={prevPage}/>
                 <Document onLoadSuccess={onLoadSuccess} onLoadError={console.error} file={'/assets/media/pdf/CUENTODIDAXIAfinal.pdf'}>
-                    <Page height={400} pageNumber={currentPage} />        
+                    <Page height={isMobile ? 200 : isTablet ? 250 : 400} pageNumber={currentPage} />        
                 </Document>   
-                <FaArrowRight style={arrowStyle} onClick={nextPage}/>
+                <FaArrowRight  className='book-arrow' style={arrowStyle} onClick={nextPage}/>
             </IconContext.Provider>
-            </div>
+            {/* </div> */}
 
         </>
     )

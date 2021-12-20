@@ -230,11 +230,7 @@ iframe {
         right: 6vh;
     }
 }
-@media only screen and (max-height: 1050px) {
-    .columna-2 iframe {
-        top: 35%;
-    }
-}
+
 
 
 @media only screen and (max-width: 1440px)  {
@@ -370,9 +366,16 @@ iframe {
           background-size: cover;
       }
   }
+  @media only screen and (max-height: 1050px) {
+      .columna-2 .presentation-video {
+          top: 35%;
+      }
+  }
 
   @media only screen and (max-height: 650px) {
-    .columna-2 iframe {
-        top: 30%;
+    .columna-2 .presentation-video {
+        top: 25%;
     }
+
+    
 }

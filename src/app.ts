@@ -53,7 +53,7 @@ if (process.env.NODE_ENV == 'production') {
     
             
         console.log('Connection successful')
-    }).catch(error => console.log(error));
+    }).catch(error => console.log('Error conectando con BBDD ',error));
 }
 
 const storage = multer.diskStorage(

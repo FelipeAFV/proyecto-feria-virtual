@@ -7,15 +7,15 @@
 @import url(./books.css);
 
 
-body {
+/* body {
     font-family: 'Open Sans';
     background: url("../images/Background.jpg");
     height:auto;
     width:100%;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover; 
-}
+    background-size: fill; 
+} */
 
 #react-root, article, div, footer, header, main, section {
     -webkit-box-align: stretch;

@@ -51,7 +51,7 @@ export default function ParkView() {
                         <div className="park-stand-container first-stand-container">
 
 
-                                <Link to={`${path}/0`}>
+                                <Link className='mx-auto' to={`${path}/0`}>
 
                                     <img id={imagesUrl[0].name} onMouseLeave={mouseLeave} onMouseOver={hoverImage} src={`assets/images/recursos-didaxia/stands/${imagesUrl[0].url}`} alt="" />
                                 </Link>
@@ -69,7 +69,7 @@ export default function ParkView() {
                                         for (let i = 1; i < 3; i++) {
                                             stands.push(
 
-                                                    <Link to={`${path}/${i}`}>
+                                                    <Link className='mx-auto' to={`${path}/${i}`}>
                                                         <img id={imagesUrl[i].name} onMouseLeave={mouseLeave} onMouseOver={hoverImage}  src={`assets/images/recursos-didaxia/stands/${imagesUrl[i].url}`} alt="" />
                                                     </Link>
 
@@ -94,7 +94,7 @@ export default function ParkView() {
                                         for (let i = 3; i < imagesUrl.length; i++) {
                                             stands.push(
 
-                                                    <Link className={'stand-'+i} to={`${path}/${i}`}>
+                                                    <Link className={'stand-'+i +' mx-auto'} to={`${path}/${i}`}>
                                                         <img  id={imagesUrl[i].name} onMouseLeave={mouseLeave} onMouseOver={hoverImage}  src={`assets/images/recursos-didaxia/stands/${imagesUrl[i].url}`} alt="" />
                                                     </Link>
 

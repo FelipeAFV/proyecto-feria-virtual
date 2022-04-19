@@ -4,6 +4,7 @@ import { useHistory } from 'react-router';
 import { Link } from 'react-router-dom';
 import { onLogin } from '../components/Auth.api';
 import swal from 'sweetalert';
+import bg from "../../public/assets/images/Background.jpg";
 export default function Login() {
 
 
@@ -46,13 +47,19 @@ export default function Login() {
 
     return (
         <div>
+            <div className='absolute z-[-10] h-[100vh] sm:w-[100%] md:h-[100%] 2xl:h-[100vh]'>
+                <img className='object-cover h-[100vh] sm:w-[100%] md:h-[100%]' src={'assets/images/Background.jpg'} alt="" />
+            </div>
             <section>
-                <main className="main-main" role="main">
+                <main className="" role="main">
                     <article className="login-form">
-                        <div className="form-container">
+                        <div className="">
                             <div className="head-form">
-                                <div className="container-full">
-                                    <img src="./assets/images/recursos-didaxia/Lienzo bandera.png" alt="Didaxia Logo" className="didaxia-lienzo" />
+                                <div className="pt-0 flex items-center">
+                                    <div className=' w-full mb-4'>
+
+                                    <img src="./assets/images/recursos-didaxia/Lienzo bandera.png" alt="Didaxia Logo" className="object-cover object-bottom  w-[100%] sm:h-[60px] md:h-[80px] lg:h-[100px] xl:h-[200px]" />
+                                    </div>
                                     <div className="container-form">
                                         <div className="container-logo">
                                             <img src="./assets/images/recursos-didaxia/didaxialogo2.png" alt="Didaxia Logos" className="didaxia-logo" />
@@ -131,7 +138,7 @@ export default function Login() {
 
 
             </section>
-            <nav className="logo-containerb">
+            <nav className="logo-containerb pt-0 pb-4">
                 <ul>
                     <li><Link to="https://www.facebook.com/DidaxiaGrupoEducativo/"><i className="fab fa-facebook-square"></i></Link></li>
                     <li><Link to="https://www.instagram.com/grupoeducativodidaxia/?hl=es"><i className="fab fa-instagram-square"></i></Link></li>
@@ -144,8 +151,8 @@ export default function Login() {
 
             </nav>
             <footer>
-                <div className="primero segundo tercero cuarto quinto">
-                    <div className="primero segundo ">
+                <div className=" flex justify-center items-center">
+                    <div className="flex justify-center items-center w-[100px]">
                         <div className="pie pag">Español</div>
                         <div>
                             <div className="year">

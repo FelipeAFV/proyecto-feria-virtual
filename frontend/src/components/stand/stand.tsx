@@ -39,8 +39,8 @@ export default function Stand() {
     const [ isChallengeSelected, setIsChallengeSelected] = useState(true);
 
     
-    const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
-    const isTablet = useMediaQuery({ query: `(min-width: 761px) and (max-width: 1280px) ` });
+    const isMobile = useMediaQuery({ query: `(max-width: 768px)` });
+    const isTablet = useMediaQuery({ query: `(min-width: 769px) and (max-width: 1024px) ` });
 
     const [ selectedChallenge, setSelectedChallenge] = useState(1);
 
@@ -99,9 +99,9 @@ export default function Stand() {
         if ( challengesStatus.find((completed) => {
             return  completed.challenge.number == i;
         })) {
-            challengesDisplay.push(<img onClick={ () => { displayChallengeVideo(i-1); setSelectedChallenge(i);}} className={'silueta-trofeo trofeo'} src={`/assets/images/recursos-didaxia/trofeos/completado/${i}.png`}></img>);
+            challengesDisplay.push(<img  onClick={ () => { displayChallengeVideo(i-1); setSelectedChallenge(i);}} className={' max-w-[50px] sm:max-w-[80px]'} src={`/assets/images/recursos-didaxia/trofeos/completado/${i}.png`}></img>);
         } else {
-            challengesDisplay.push(<img onClick={ () => { displayChallengeVideo(i-1); setSelectedChallenge(i)}}  className={'silueta-trofeo trofeo'} src={`/assets/images/recursos-didaxia/trofeos/incompleto/${i}.png`}></img>);
+            challengesDisplay.push(<img onClick={ () => { displayChallengeVideo(i-1); setSelectedChallenge(i)}}  className={' max-w-[50px] sm:max-w-[60px]'}  src={`/assets/images/recursos-didaxia/trofeos/incompleto/${i}.png`}></img>);
             
         }
     } 
@@ -110,21 +110,24 @@ export default function Stand() {
         
 
     return (
-        <div className="park-background scrollable-content" onClick={() => {
+        <div className="park-background py-0 mt-0 scrollable-content" onClick={() => {
 
         }}>
-            <div className={'stand-container'} style={
-                {
-                    backgroundImage: `url('/assets/images/recursos-didaxia/stands/${standId}/${isMobile ? 'panel-mobile' : (isTablet ? 'panel-tablet' : 'Panel')}.png')`,
+            <div className='min-h-[80%] relative flex flex-row justify-center items-start py-0 mt-10'>
+
+            
+            <div className={'flex absolute bottom-0 flex-row items-center justify-center w-[100%] h-[100%] max-w-[1280px] '} >
+                
+                    <img className='absolute top-0 object-cover object-top w-[100%]  h-[100%] 2xl:h-[100%]' src={`/assets/images/recursos-didaxia/stands/${standId}/${isMobile ? 'panel-mobile' : (isTablet ? 'panel-tablet' : 'Panel')}.png`}
+                    />
                     
-                    
-                }}>
+            
                     
 
 
-                    <div className="columna columna-1 " style={(standNumber === 4 || standNumber == 6) && isMobile? { display: 'none'} : {}}>
+                    <div className=" " >
 
-                        <div className={'capsulas'}>
+                        <div className={'md:mt-40 lg:mt-0'}>
 
                            {    currentCapsule?.cf.map( (capsula) => {
                                     return (
@@ -139,25 +142,18 @@ export default function Stand() {
                            }
                         </div>
                     </div>
-                    <div className="columna columna-2" style={(standNumber === 4 || standNumber == 6) && isMobile? { margin: 'auto', width: '100%'} : {}}>
+                    <div className="flex flex-col relative items-center justify-start mt-80   max-w-[100px] sm:max-w-[200px] md:max-w-[100%] md:mx-20" >
                             { standVideos[standNumber].mainVideo}
 
-                            <div className={'trofeo-container'}>
+                            <div className={'absolute max-w-[150px] flex flex-row bottom-[150px]'}>
 
                             { challengesDisplay}
                             
                             </div>
                             {
-                                standNumber == 5 ? <Stand5Middle></Stand5Middle> : ''
+                                standNumber == 4 ? <Stand5Middle></Stand5Middle> : ''
                             }
-                            {
-                                standNumber == 6 ? <Stand6Middle></Stand6Middle> : ''
-                                
-                            }
-                            {
-                                standNumber == 4 ? <Stand7Middle></Stand7Middle> : ''
 
-                            }
                             <img  src={`/assets/images/recursos-didaxia/stands/${standId}/Mesa.png`} style={
                                 {
                                     maxWidth: `200px`,
@@ -167,9 +163,9 @@ export default function Stand() {
                             </img>
 
                     </div>
-                    <div className="columna columna-3" style={(standNumber === 4 || standNumber == 6) && isMobile? { display: 'none'} : {}}>
+                    <div className="" >
 
-                        <div className="activities">
+                        <div className="md:mt-40 lg:mt-0">
                         {    currentActivity?.activities.map( (activity) => {
                                     return (
                                         <ImageContent handleOnClick={() => {
@@ -186,32 +182,6 @@ export default function Stand() {
                     
             
             </div>
-
-
-            <div className={'responsive-activities'}>
-
-                          { standNumber == 5 || 4 ? <h2 style={styles.headingStyle}>Programas</h2> : <h2 style={styles.headingStyle}>Actividades</h2>}
-            {    currentActivity?.activities.map( (activity) => {
-                                    return (
-                                        <div className="video">
-                                            {activity.video}
-                                        </div>
-                                    ); 
-                           } )
-                           
-                           }
-            </div>
-            <div className={'responsive-capsules'}>
-                          { standNumber == 5 || 4 ? '' : <h2  style={styles.headingStyle}>Capsulas Formativas</h2>}
-                           {    currentCapsule?.cf.map( (capsula) => {
-                                    return (
-                                        <div className="video">
-                                            {capsula.video}
-                                        </div>
-                                    ); 
-                           } )
-                           
-                           }
             </div>
 
             <div className={'menu-icons'}>

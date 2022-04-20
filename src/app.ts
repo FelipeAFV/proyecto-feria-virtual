@@ -46,6 +46,7 @@ if (process.env.NODE_ENV == 'production') {
     
 } else {
     console.log('Creando conexion en desarrollo');
+
     createConnection()
         .then( async (connection) => {
             await createStands();

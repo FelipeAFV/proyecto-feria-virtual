@@ -434,7 +434,7 @@ button.btn-subb{
     text-align: center;
     user-select: none;
     width: 100%;
-    color: #black;
+    color: black;
     border-radius:30px;
     border-color:transparent;
     padding:5px;
@@ -449,7 +449,7 @@ button.btn-subb{
     text-align: center;
     user-select: none;
     width: 100%;
-    color: #black;
+    color: black;
     border-radius:30px;
     border-color:transparent;
     padding:5px;
@@ -466,7 +466,7 @@ button.btn-subb{
     align-items:center;
     user-select: none;
     width: 100%;
-    color: #black;
+    color: black;
     border-radius:30px;
     border-color:transparent;
     padding-right: 50px;
@@ -556,7 +556,7 @@ button{
     .didaxia-lienzo{
         max-width: 100%;
         margin-top:300px;
-        //transform:scale(1.2);
+
     }
     .container-full{
         min-height: 0px;
@@ -665,7 +665,7 @@ button{
     .didaxia-lienzo{
         max-width: 100%;
         
-        //transform:scale(1.6);
+
         padding-top:80px;
     }
     .container-full{
@@ -680,4 +680,9 @@ button{
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     }
+}
+
+html, body, #root, #root > div {
+    height: auto;
+    width: 100%;
 }

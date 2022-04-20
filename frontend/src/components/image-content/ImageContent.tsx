@@ -17,7 +17,7 @@ export default function ImageContent(props: ImageContentProps) {
 
 
     return (
-        <div>
+        <div className='sm:max-w-[120px] max-w-[120px] md:max-w-[100%]'>
             <img style={style} src={props.imagePath} onClick={props.handleOnClick}></img>
             
         </div>

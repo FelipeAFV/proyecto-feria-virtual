@@ -46,12 +46,12 @@ export default function ParkView() {
         <Switch>
             <Route  exact path={`${path}`}>
 
-                <div className="park-background park-main scrollable-content">
+                <div className="park-background px-4">
 
-                        <div className="park-stand-container first-stand-container">
+                        <div className="flex flex-row md:mt-20 md:mb-14 xl:mb-4 2xl:mb-10">
 
 
-                                <Link className='mx-auto' to={`${path}/0`}>
+                                <Link className='mx-auto w-[200px] sm:w-[300px]' to={`${path}/0`}>
 
                                     <img id={imagesUrl[0].name} onMouseLeave={mouseLeave} onMouseOver={hoverImage} src={`assets/images/recursos-didaxia/stands/${imagesUrl[0].url}`} alt="" />
                                 </Link>
@@ -59,7 +59,7 @@ export default function ParkView() {
 
         
                         </div>
-                        <div className="park-stand-container second-stand-container">
+                        <div className="flex flex-row justify-center md:mb-10 xl:mb-4 2xl:mb-10 items-center">
 
                             {
                                 (
@@ -69,7 +69,7 @@ export default function ParkView() {
                                         for (let i = 1; i < 3; i++) {
                                             stands.push(
 
-                                                    <Link className='mx-auto' to={`${path}/${i}`}>
+                                                    <Link className='mr-4 last:mr-0 last:ml-4 w-[300px]' to={`${path}/${i}`}>
                                                         <img id={imagesUrl[i].name} onMouseLeave={mouseLeave} onMouseOver={hoverImage}  src={`assets/images/recursos-didaxia/stands/${imagesUrl[i].url}`} alt="" />
                                                     </Link>
 
@@ -84,7 +84,7 @@ export default function ParkView() {
 
                             
                     </div>
-                        <div className="park-stand-container third-stand-container">
+                        <div className="flex flex-row md:mx-auto justify-around lg:w-[90%]  xl:w-[75%]">
 
                             {
                                 (
@@ -94,7 +94,7 @@ export default function ParkView() {
                                         for (let i = 3; i < imagesUrl.length; i++) {
                                             stands.push(
 
-                                                    <Link className={'stand-'+i +' mx-auto'} to={`${path}/${i}`}>
+                                                    <Link className={' mr-4 last:mr-0 last:ml-4  w-[300px]'} to={`${path}/${i}`}>
                                                         <img  id={imagesUrl[i].name} onMouseLeave={mouseLeave} onMouseOver={hoverImage}  src={`assets/images/recursos-didaxia/stands/${imagesUrl[i].url}`} alt="" />
                                                     </Link>
 

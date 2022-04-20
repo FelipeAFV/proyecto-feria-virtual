@@ -61,17 +61,9 @@ export const standsImages = [
         url:'socioemocional-sin-luz.png',
     },
     {
-        name: 'class',
-        url: 'class-sin-luz.png',
-    },
-    {
         name: 'kids',
         url: 'kids-sin-luz.png',
-    },
-    {
-        name: 'books',
-        url: 'books-sin-luz.png',
-    },
+    }
 
     
 ]

@@ -4,6 +4,7 @@ import GRADES from "../model/grades/grades";
 import SUBJECTS, { SubjectValue } from "../model/subjects/subjects";
 import { onRegister } from "../components/Auth.api";
 import swal from 'sweetalert';
+import Footer from '../components/Footer';
 
 
 interface RegisterValues {
@@ -153,7 +154,7 @@ export default function Register() {
 
 
             swal({
-                title:"Registro exitoso",
+                title: "Registro exitoso",
                 icon: "success",
                 timer: 2000
             });
@@ -174,10 +175,11 @@ export default function Register() {
 
         <div className="main-container">
 
-            <img src="./assets/images/recursos-didaxia/Lienzo bandera.png" alt="lienzo" className="didaxia-lienzo" />
+            <div className='absolute z-[-10] h-[100%] w-[100%]'>
+                <img className='object-cover h-[100%] ' src={'assets/images/Background.jpg'} alt="" />
+            </div>
 
-
-            <div className="container-form">
+            <div className="container-form mb-10">
                 <div className="container-logo">
                     <img src="./assets/images/recursos-didaxia/didaxialogo2.png" alt="Didaxia Logos" className="didaxia-logo" />
                 </div>
@@ -407,6 +409,8 @@ export default function Register() {
                 </form>
 
             </div>
+
+            <Footer/>
 
         </div>
     )

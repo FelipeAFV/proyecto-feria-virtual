@@ -145,7 +145,7 @@ export default function Stand() {
                     <div className="flex flex-col relative items-center justify-start mt-80   max-w-[100px] sm:max-w-[200px] md:max-w-[100%] md:mx-20" >
                             { standVideos[standNumber].mainVideo}
 
-                            <div className={'absolute max-w-[150px] flex flex-row bottom-[150px]'}>
+                            <div className={'absolute max-w-[150px] md:max-w-[2000px] flex flex-row bottom-[150px]'}>
 
                             { challengesDisplay}
                             

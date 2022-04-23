@@ -172,20 +172,21 @@ export default function Register() {
 
     return (
 
+        <div className='login-background'>
 
-        <div className="main-container">
 
-            <div className='absolute z-[-10] h-[100%] w-[100%]'>
-                <img className='object-cover h-[100%] ' src={'assets/images/Background.jpg'} alt="" />
-            </div>
+            <div className="flex-col min-h-[100%]   flex ">
 
-            <div className="container-form mb-10">
-                <div className="container-logo">
-                    <img src="./assets/images/recursos-didaxia/didaxialogo2.png" alt="Didaxia Logos" className="didaxia-logo" />
-                </div>
-                <form className="form" id="loginForm" >
-                    <div className="primero segundo tercero cuarto quinto">
-                        <div className="first-layer">
+                <div className='relative min-h-[100%] w-[100%]'>
+                    {/* <img className='absolute object-cover -z-10 h-[100%] w-full ' src={'assets/images/Background.jpg'} alt="" /> */}
+
+
+                    <div className=" bg-[#f3f3f3cc] max-w-[900px] z-[999999] rounded-xl mt-20 px-10 w-[90%] md:w-[50%] mx-auto flex flex-col mb-10 ">
+                        <div className="container-logo mb-4">
+                            <img src="./assets/images/recursos-didaxia/didaxialogo2.png" alt="Didaxia Logos" className="didaxia-logo" />
+                        </div>
+                        <form className="w-[90%] sm:w-[50%] mx-auto " id="loginForm" >
+
                             <div className="user-container">
                                 <label className="label-user inputd">
                                     <span className="user-input">Nombre</span>
@@ -193,9 +194,9 @@ export default function Register() {
                                         type="text"
                                         className="input first second focus-visible" value={registerValues.firstName} onChange={handleInputChange} />
                                 </label>
+
                             </div>
-                        </div>
-                        <div className="first-layer">
+
                             <div className="user-container">
                                 <label className="label-user inputd">
                                     <span className="user-input">Apellido</span>
@@ -203,9 +204,9 @@ export default function Register() {
                                         type="text"
                                         className="input first second focus-visible" value={registerValues.lastName} onChange={handleInputChange} />
                                 </label>
+
                             </div>
-                        </div>
-                        <div className="first-layer">
+
                             <div className="user-container">
                                 <label className="label-user inputd">
                                     <span className="user-input">Edad</span>
@@ -214,8 +215,8 @@ export default function Register() {
                                         className="input first second focus-visible" value={registerValues.age} onChange={handleInputChange} />
                                 </label>
                             </div>
-                        </div>
-                        <div className="first-layer">
+
+
                             <div className="user-container">
                                 <label className="label-user inputd">
                                     <span className="user-input">Correo electrónico</span>
@@ -224,8 +225,6 @@ export default function Register() {
                                         className="input first second focus-visible" value={registerValues.email} onChange={handleInputChange} />
                                 </label>
                             </div>
-                        </div>
-                        <div className="first-layer">
                             <div className="user-container">
                                 <label className="label-user inputd">
                                     <span className="user-input">Teléfono</span>
@@ -234,184 +233,180 @@ export default function Register() {
                                         className="input first second focus-visible" value={registerValues.phone} onChange={handleInputChange} />
                                 </label>
                             </div>
-                        </div>
-                        <div className="first-layer">
-                            <div className="user-container">
+
+
+                            <div className="flex flex-col">
                                 <label className="label-user inputd">
                                     <span className="user-input">Dirección</span>
                                     <input name="address"
                                         type="text"
                                         className="input first second focus-visible" value={registerValues.address} onChange={handleInputChange} />
                                 </label>
-                            </div>
-                        </div>
-                        <div className="first-layer">
-                            <div className="user-container">
-                                <label className="label-user inputd">
-                                    <span className="user-input">Condominio</span>
-                                    <input name="condominium"
-                                        type="text"
-                                        className="input first second focus-visible" value={registerValues.condominium} onChange={handleInputChange} />
-                                </label>
-                            </div>
-                        </div>
-                        <div className="first-layer">
-                            <div className="user-container">
-                                <label className="label-user inputd">
-                                    <span className="user-input">Usuario o correo electrónico</span>
-                                    <input aria-label="Usuario o correo electrónico" name="username"
-                                        aria-required="true" autoCapitalize="off" autoCorrect="off"
-                                        type="text"
-                                        className="input first second focus-visible" value={registerValues.username} onChange={handleInputChange} />
-                                </label>
-                                <div className="fix"></div>
-                            </div>
-                        </div>
-                        <div className="first-layer">
-                            <div className="user-container">
-                                <label className="label-user inputd">
-                                    <span className="user-input">Contraseña</span>
-                                    <input aria-label="Contraseña" aria-required="true"
-                                        autoCapitalize="off" autoCorrect="off" name="password"
-                                        type={showPost ? 'text' : 'password'} className="input first second focus-visible" value={registerValues.password} onChange={handleInputChange} />
-                                </label>
-                                <div className="fix">
-                                    <div className="primero segundo tercero cuarto sexto">
-                                        <button className="btn btn-show btn-btn"
-                                            type="button" onClick={toggleHandler}>{showPost ? 'Ocultar' : 'Mostrar'}</button>
+
+                                <div className="user-container">
+                                    <label className="label-user inputd">
+                                        <span className="user-input">Condominio</span>
+                                        <input name="condominium"
+                                            type="text"
+                                            className="input first second focus-visible" value={registerValues.condominium} onChange={handleInputChange} />
+                                    </label>
+                                </div>
+                                <div className="user-container">
+                                    <label className="label-user inputd">
+                                        <span className="user-input">Usuario o correo electrónico</span>
+                                        <input aria-label="Usuario o correo electrónico" name="username"
+                                            aria-required="true" autoCapitalize="off" autoCorrect="off"
+                                            type="text"
+                                            className="input first second focus-visible" value={registerValues.username} onChange={handleInputChange} />
+                                    </label>
+
+                                </div>
+                                <div className="user-container">
+                                    <label className="label-user inputd">
+                                        <span className="user-input">Contraseña</span>
+                                        <input aria-label="Contraseña" aria-required="true"
+                                            autoCapitalize="off" autoCorrect="off" name="password"
+                                            type={showPost ? 'text' : 'password'} className="input first second focus-visible" value={registerValues.password} onChange={handleInputChange} />
+                                    </label>
+                                    <div className="fix">
+                                        <div className="primero segundo tercero cuarto sexto">
+                                            <button className="btn btn-show btn-btn"
+                                                type="button" onClick={toggleHandler}>{showPost ? 'Ocultar' : 'Mostrar'}</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div className="user-container">
+                                    <div className="label-user inputd">
+                                        <span className="user-input">Rol</span>
+                                        <select className="input first second focus-visible" name="role" value={registerValues.role} onChange={handleInputChange} >
+                                            <option value="ALUMNO">Estudiante</option>
+                                            <option value="APODERADO">Apoderado</option>
+                                            <option value="PROFESOR">Profesor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div className='flex flex-col'>
+
+                                    {
+                                        (() => {
+
+                                            switch (registerValues.role) {
+                                                case 'ALUMNO':
+                                                    return (
+                                                        <>
+
+                                                            <div className="user-container">
+                                                                <div className="label-user inputd">
+                                                                    <span className="user-input">Curso</span>
+                                                                    <select className="input first second focus-visible" name="grade" value={registerValues.grade} onChange={handleInputChange} >
+                                                                        {
+                                                                            (() => {
+                                                                                let options = [];
+                                                                                for (let course of GRADES) {
+                                                                                    options.push(<option key={course.value} value={course.value}>{course.name}</option>)
+                                                                                }
+                                                                                return options;
+                                                                            })()
+                                                                        }
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div className="user-container">
+                                                                <label className="label-user inputd">
+                                                                    <span className="user-input">Colegio</span>
+                                                                    <input type="text" name="school" className="input first second focus-visible" value={registerValues.school} onChange={handleInputChange} />
+                                                                </label>
+                                                            </div>
+
+                                                        </>
+                                                    );
+                                                    break;
+                                                case 'APODERADO':
+                                                    return (
+                                                        <div className="first-layer">
+                                                            <div className="user-container">
+                                                                <label className="label-user inputd">
+                                                                    <span className="user-input">Número de hijos</span>
+                                                                    <select className="input first second focus-visible" name="childrenNumber" value={registerValues.childrenNumber} onChange={handleInputChange} >
+                                                                        {
+                                                                            (() => {
+                                                                                let options = [];
+                                                                                for (let i = 1; i <= 10; i++) {
+                                                                                    options.push(<option key={i} value={i}>{i + ' Hijo/as'}</option>)
+                                                                                }
+                                                                                return options;
+                                                                            })()
+                                                                        }
+                                                                    </select>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                    break;
+                                                case 'PROFESOR':
+                                                    return (
+                                                        <>
+                                                            <div className="first-layer">
+                                                                <div className="user-container">
+                                                                    <div className="label-user inputd">
+                                                                        <span className="user-input">Asignatura impartida</span>
+                                                                        <select className="input first second focus-visible" name="professorSubjec" value={registerValues.professorSubject} onChange={handleInputChange} >
+                                                                            {
+                                                                                (() => {
+                                                                                    let options = [];
+                                                                                    for (let subject of SUBJECTS) {
+                                                                                        options.push(<option key={subject.value} value={subject.value}>{subject.name}</option>)
+                                                                                    }
+                                                                                    return options;
+                                                                                })()
+                                                                            }
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="first-layer">
+                                                                <div className="user-container">
+                                                                    <label className="label-user inputd">
+                                                                        <span className="user-input">Colegio donde trabaja</span>
+                                                                        <input type="text" name="professorSchool" className="input first second focus-visible" value={registerValues.professorSchool} onChange={handleInputChange} />
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </>
+                                                    );
+                                                    break;
+
+                                            }
+                                        })()
+                                    }
+
+                                </div>
+                                <div className="mx-auto flex justify-center flex-col items-center mb-8">
+                                    {
+                                        isFormValid(formFieldsStatus) ? <span></span> : <div className="text-danger invalid-field mb-3">Debes rellenar todos los campos</div>
+                                    }
+                                    <button className="btn btn-init btn-sub mx-auto" onClick={handleSubmit}>
+                                        <div className="primero segundo tercero cuarto">Registrarse</div>
+                                    </button>
+                                    <div>
+                                        <Link to="login" className="text-[#4c81b3] text-center" type="submit">
+                                            Volver
+                                        </Link>
+
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="first-layer">
-                            <div className="user-container">
-                                <div className="label-user inputd">
-                                    <span className="user-input">Rol</span>
-                                    <select className="input first second focus-visible" name="role" value={registerValues.role} onChange={handleInputChange} >
-                                        <option value="ALUMNO">Estudiante</option>
-                                        <option value="APODERADO">Apoderado</option>
-                                        <option value="PROFESOR">Profesor</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        {
-                            (() => {
 
-                                switch (registerValues.role) {
-                                    case 'ALUMNO':
-                                        return (
-                                            <>
-                                                <div className="first-layer">
-                                                    <div className="user-container">
-                                                        <div className="label-user inputd">
-                                                            <span className="user-input">Curso</span>
-                                                            <select className="input first second focus-visible" name="grade" value={registerValues.grade} onChange={handleInputChange} >
-                                                                {
-                                                                    (() => {
-                                                                        let options = [];
-                                                                        for (let course of GRADES) {
-                                                                            options.push(<option key={course.value} value={course.value}>{course.name}</option>)
-                                                                        }
-                                                                        return options;
-                                                                    })()
-                                                                }
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="first-layer">
-                                                    <div className="user-container">
-                                                        <label className="label-user inputd">
-                                                            <span className="user-input">Colegio</span>
-                                                            <input type="text" name="school" className="input first second focus-visible" value={registerValues.school} onChange={handleInputChange} />
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </>
-                                        );
-                                        break;
-                                    case 'APODERADO':
-                                        return (
-                                            <div className="first-layer">
-                                                <div className="user-container">
-                                                    <label className="label-user inputd">
-                                                        <span className="user-input">Número de hijos</span>
-                                                        <select className="input first second focus-visible" name="childrenNumber" value={registerValues.childrenNumber} onChange={handleInputChange} >
-                                                            {
-                                                                (() => {
-                                                                    let options = [];
-                                                                    for (let i = 1; i <= 10; i++) {
-                                                                        options.push(<option key={i} value={i}>{i + ' Hijo/as'}</option>)
-                                                                    }
-                                                                    return options;
-                                                                })()
-                                                            }
-                                                        </select>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        )
-                                        break;
-                                    case 'PROFESOR':
-                                        return (
-                                            <>
-                                                <div className="first-layer">
-                                                    <div className="user-container">
-                                                        <div className="label-user inputd">
-                                                            <span className="user-input">Asignatura impartida</span>
-                                                            <select className="input first second focus-visible" name="professorSubjec" value={registerValues.professorSubject} onChange={handleInputChange} >
-                                                                {
-                                                                    (() => {
-                                                                        let options = [];
-                                                                        for (let subject of SUBJECTS) {
-                                                                            options.push(<option key={subject.value} value={subject.value}>{subject.name}</option>)
-                                                                        }
-                                                                        return options;
-                                                                    })()
-                                                                }
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="first-layer">
-                                                    <div className="user-container">
-                                                        <label className="label-user inputd">
-                                                            <span className="user-input">Colegio donde trabaja</span>
-                                                            <input type="text" name="professorSchool" className="input first second focus-visible" value={registerValues.professorSchool} onChange={handleInputChange} />
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </>
-                                        );
-                                        break;
+                        </form>
 
-                                }
-                            })()
-                        }
-
-                        <div className="primero segundo tercero cuarto septimo octavo noveno decimo">
-                            {
-                                isFormValid(formFieldsStatus) ? <span></span> : <div className="text-danger invalid-field mb-3">Debes rellenar todos los campos</div>
-                            }
-                            <button className="btn btn-init btn-sub" onClick={handleSubmit}>
-                                <div className="primero segundo tercero cuarto">Registrarse</div>
-                            </button>
-                            <div className="primero segundo tercero cuarto">
-                                <Link to="login" className="btn-subc" type="submit">
-                                    <div className="primero tercero cuarto">Volver</div>
-                                </Link>
-
-                            </div>
-                        </div>
                     </div>
-
-                </form>
+                </div>
 
             </div>
-
-            <Footer/>
-
+            <Footer />
         </div>
     )
 }

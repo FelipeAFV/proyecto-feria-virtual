@@ -4,7 +4,7 @@ import { Link, useHistory} from 'react-router-dom';
 
 export default function Menu() {
 
-    const standNames: any[] = [{name: 'kids', number: 5}, {name: 'books', number: 6}, {name: 'class', number: 4}, 
+    const standNames: any[] = [{name: 'kids', number: 5}, 
     {name: 'socioemocional', number: 3} ,{name: 'bienestar', number: 1},{name: 'creatividad', number: 0}, 
     {name: 'medioambiental', number: 2}
     ];
@@ -24,12 +24,12 @@ export default function Menu() {
         <div className={'menu-background'}>
 
 
-            <div className={'tablet-background'}>
+            <div className={'tablet-background '}>
 
-                        <div className={'close-menu'} onClick={navigateParkView}></div>
+                        <div className={'close-menu '} onClick={navigateParkView}></div>
                         <div className={'close-menu-responsive'}></div>
-                <div className={'responsive-container'}>
-                        <div className={'lienzo-bandera'}>
+                <div className={'responsive-container flex items-center justify-center'}>
+                        <div className={'lienzo-bandera w-[50%] mx-auto'}>
 
                         </div>
 
@@ -55,7 +55,7 @@ export default function Menu() {
                                     {
                                             (() => {
                                                 let firstStands = [];
-                                                for (let i = 2; i < 4; i++) {
+                                                for (let i = 2; i < 5; i++) {
                                                     firstStands.push(<Link to={`/homepage/${standNames[i].number}`}>
                                                     <img className={'stand-logo'} src={`assets/images/menu/logos/${standNames[i].name}.png`} alt="" />
                                                 </Link>)
@@ -64,7 +64,7 @@ export default function Menu() {
                                             })()
                                         }
                                     </div>
-                                    <div className="third-logo-container">
+                                    {/* <div className="third-logo-container">
                                     {
                                             (() => {
                                                 let firstStands = [];
@@ -76,7 +76,7 @@ export default function Menu() {
                                                 return firstStands;
                                             })()
                                         }
-                                    </div>
+                                    </div> */}
                                     <div className="forth-logo-container">
                                     {
                                             (() => {

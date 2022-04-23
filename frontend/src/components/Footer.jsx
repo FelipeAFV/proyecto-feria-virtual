@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <footer className=' bottom-0 w-full'>
-            <div className=" flex justify-center bg-white items-center py-4">
+        <footer className='h-[70px]  w-full bg-white'>
+            <div className=" flex justify-center h-full  items-center py-4">
 
                 <p className="">Didaxia
 

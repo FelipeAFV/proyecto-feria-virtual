@@ -110,24 +110,24 @@ export default function Stand() {
         
 
     return (
-        <div className="park-background py-0 mt-0 scrollable-content" onClick={() => {
+        <div className="park-background py-0 mt-0 flex flex-col scrollable-content" onClick={() => {
 
         }}>
-            <div className='min-h-[80%] relative flex flex-row justify-center items-start py-0 mt-10'>
+            <div className='min-h-[80%]  relative flex flex-row justify-center items-start py-0 mt-10'>
 
             
-            <div className={'flex absolute bottom-0 flex-row items-center justify-center w-[100%] h-[100%] max-w-[1280px] '} >
+            <div className={'flex  bottom-0 flex-row items-center justify-center w-[100%] sm:px-8  h-[100%] max-w-[1280px] '} >
                 
-                    <img className='absolute top-0 object-cover object-top w-[100%]  h-[100%] 2xl:h-[100%]' src={`/assets/images/recursos-didaxia/stands/${standId}/${isMobile ? 'panel-mobile' : (isTablet ? 'panel-tablet' : 'Panel')}.png`}
+                    <img className='absolute top-0 object-cover xl:object-contain object-top w-[100%] lg:w-[80%] 2xl:w-[70%]  h-[100%] 2xl:h-[100%]' src={`/assets/images/recursos-didaxia/stands/${standId}/${isMobile ? 'panel-mobile' : (isTablet ? 'panel-tablet' : 'Panel')}.png`}
                     />
                     
             
                     
 
 
-                    <div className=" " >
+                    <div className=" z-20" >
 
-                        <div className={'md:mt-40 lg:mt-0'}>
+                        <div className={'md:mt-40 lg:mt-0 relative 2xl:right-20'}>
 
                            {    currentCapsule?.cf.map( (capsula) => {
                                     return (
@@ -142,7 +142,7 @@ export default function Stand() {
                            }
                         </div>
                     </div>
-                    <div className="flex flex-col relative items-center justify-start mt-80   max-w-[100px] sm:max-w-[200px] md:max-w-[100%] md:mx-20" >
+                    <div className="flex flex-col relative items-center justify-start mt-80 mb-20  max-w-[100px] sm:max-w-[200px] md:max-w-[100%] md:mx-20" >
                             { standVideos[standNumber].mainVideo}
 
                             <div className={'absolute max-w-[150px] md:max-w-[2000px] flex flex-row bottom-[150px]'}>
@@ -154,7 +154,7 @@ export default function Stand() {
                                 standNumber == 4 ? <Stand5Middle></Stand5Middle> : ''
                             }
 
-                            <img  src={`/assets/images/recursos-didaxia/stands/${standId}/Mesa.png`} style={
+                            <img className=''  src={`/assets/images/recursos-didaxia/stands/${standId}/Mesa.png`} style={
                                 {
                                     maxWidth: `200px`,
                                     
@@ -163,9 +163,9 @@ export default function Stand() {
                             </img>
 
                     </div>
-                    <div className="" >
+                    <div className="z-20" >
 
-                        <div className="md:mt-40 lg:mt-0">
+                        <div className="md:mt-40 lg:mt-0 relative 2xl:left-20">
                         {    currentActivity?.activities.map( (activity) => {
                                     return (
                                         <ImageContent handleOnClick={() => {
@@ -184,7 +184,7 @@ export default function Stand() {
             </div>
             </div>
 
-            <div className={'menu-icons'}>
+            <div className={'menu-icons mb-20'}>
                 <Link to='homepage'>
                     <img src="/assets/images/recursos-didaxia/stands/icons/Volver.png" alt="" />
                 </Link>

@@ -39,7 +39,7 @@ export default function ProtectedRoute({component: Component, ...restOfProps }: 
 
 
     return (
-        <div>
+
             <Route
                 {...restOfProps}
                 render={(props) => {
@@ -47,6 +47,6 @@ export default function ProtectedRoute({component: Component, ...restOfProps }: 
                 }
                 }
                 />
-        </div>
+
     )
 }

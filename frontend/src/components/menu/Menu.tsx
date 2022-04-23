@@ -4,7 +4,7 @@ import { Link, useHistory} from 'react-router-dom';
 
 export default function Menu() {
 
-    const standNames: any[] = [{name: 'kids', number: 5}, 
+    const standNames: any[] = [{name: 'kids', number: 4}, 
     {name: 'socioemocional', number: 3} ,{name: 'bienestar', number: 1},{name: 'creatividad', number: 0}, 
     {name: 'medioambiental', number: 2}
     ];

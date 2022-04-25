@@ -103,6 +103,12 @@ class AuthController {
 
         res.end();
     }
+
+    signOut = async (req: Request, res: Response) => {
+        res.clearCookie('jwt');
+        res.end()
+    }
+
     forgotPassword = async (req: Request, res: Response) => {
         const userRepository = getRepository(User);
         const { email } = req.body;

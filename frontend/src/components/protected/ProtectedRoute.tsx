@@ -14,7 +14,7 @@ export default function ProtectedRoute({component: Component, ...restOfProps }: 
     // const isAuthenticated = localStorage.getItem("isAuthenticated");
 
     const checkAuth = async () => {
-        const response =  await isLogged();
+        const response  =  await isLogged();
         // const response =  true;
 
         setIsAuth(response);

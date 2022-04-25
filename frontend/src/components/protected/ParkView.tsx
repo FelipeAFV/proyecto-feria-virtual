@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Route, Switch, useRouteMatch } from 'react-router';
 import { Link } from 'react-router-dom';
+import SignOut from '../auth/SignOut';
 import Stand from '../stand/stand'
 import { imageFormat, withLightSufix, withoutLightSufix, standsImages } from "../utils/stands-images";
 export default function ParkView() {
@@ -45,6 +46,7 @@ export default function ParkView() {
         <>
         <Switch>
             <Route  exact path={`${path}`}>
+                <SignOut/>
 
                     <div className='flex min-h-[100%] my-auto absolute top-0  flex-col  items-center justify-center overflow-auto '>
 

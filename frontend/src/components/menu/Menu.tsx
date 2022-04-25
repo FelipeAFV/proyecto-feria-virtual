@@ -21,15 +21,22 @@ export default function Menu() {
 
     return (
         <>
-        <div className={'menu-background'}>
+        <div className={' bg-[#3d3f8e] xl:bg-[#00000000]  menu-background flex items-center justify-center'}>
+            <div className=' relative h-[80%] w-full xl:w-[auto] flex items-center justify-center' >
+
+            <img src='/assets/images/menu/tablet.png' className='h-[100%] hidden object-contain xl:block'></img>
+            {/* <div  className='w-[100%] h-[100%] absolute z-[9999] tablet-background block '></div> */}
+                        <div className={'close-menu absolute top-0 md:top-[70px] left-20  md:left-36'} onClick={navigateParkView}></div>
+            <img src='/assets/images/menu/lienzo-bandera.png' className='h-[100px]  absolute z-20 top-10 mx-auto'></img>
+            </div>
+            
+            <div className={' '}>
 
 
-            <div className={'tablet-background '}>
 
-                        <div className={'close-menu '} onClick={navigateParkView}></div>
-                        <div className={'close-menu-responsive'}></div>
+
                 <div className={'responsive-container flex items-center justify-center'}>
-                        <div className={'lienzo-bandera w-[50%] mx-auto'}>
+                        <div className={' w-[50%] mx-auto'}>
 
                         </div>
 
@@ -38,7 +45,7 @@ export default function Menu() {
                                 if (isMobile) {
                                     return <div className={'logo-container'}>
 
-                                    <div className="first-logo-container">
+                                    <div className="first-logo-container mb-20 lg:mb-10">
                                         {
                                             (() => {
                                                 let firstStands = [];
@@ -77,25 +84,13 @@ export default function Menu() {
                                             })()
                                         }
                                     </div> */}
-                                    <div className="forth-logo-container">
-                                    {
-                                            (() => {
-                                                let firstStands = [];
-                                                for (let i = 6; i < standNames.length; i++) {
-                                                    firstStands.push(<Link to={`/homepage/${standNames[i].number}`}>
-                                                    <img className={'stand-logo'} src={`assets/images/menu/logos/${standNames[i].name}.png`} alt="" />
-                                                </Link>)
-                                                }
-                                                return firstStands;
-                                            })()
-                                        }
-                                    </div>
+                                   
                                     
                                 </div>;
                                 } else {
                                     return <div className={'logo-container'}>
 
-                                    <div className="first-logo-container">
+                                    <div className="first-logo-container mb-40 lg:mb-10">
                                         {
                                             (() => {
                                                 let firstStands = [];
